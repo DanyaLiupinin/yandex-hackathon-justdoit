@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  display: flex;
+  padding-left: 92px;
+  padding-right: 93px;
+}
+.footer__contacts {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  width: 164px;
+  height: 30px;
+  object-fit: cover;
+}
