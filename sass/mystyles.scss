@@ -1,35 +1,47 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url("../fonts/fonts.css");
 
 // Set your brand colors
 
 // Main
 
 $black: #000000;
-$white: #FFFFFF;
+$white: #ffffff;
 $gray-primary: #858585;
-$gray-secondary: #EAEAEA;
-$gray-tertiary: #F5F5F5;
+$gray-secondary: #eaeaea;
+$gray-tertiary: #f5f5f5;
 
 // Additional
 
-$green-secondary: #9EEAA8;
-$yellow-secondary: #FDEE93;
-$yellow-tertiary: #FEF9D8;
-$orange-secondary: #F4AD7C;
-$orange-teritary: #FBE2D0;
-$violet-secondary: #9D85F4;
-$violet-tertiary: #DCD3FB;
-$green-tertiary: #DCF7E0;
+$green-secondary: #9eeaa8;
+$yellow-secondary: #fdee93;
+$yellow-tertiary: #fef9d8;
+$orange-secondary: #f4ad7c;
+$orange-teritary: #fbe2d0;
+$violet-secondary: #9d85f4;
+$violet-tertiary: #dcd3fb;
+$green-tertiary: #dcf7e0;
 
 // Accents
 
-$yellow-accent: #FBE556;
-$violet-accent: #6740ED;
-$orange-accent: #EE7F32;
-$green-accent: #68DF77;
+$yellow-accent: #fbe556;
+$violet-accent: #6740ed;
+$orange-accent: #ee7f32;
+$green-accent: #68df77;
+
+$brown: $black;
+$beige-light: $black;
+$purple: $black;
+$pink: $black;
+$beige-lighter: white;
+
+$brown:$black;
+$beige-light:$black;
+$purple:$black;
+$pink:$black;
+$beige-lighter: white;
 
 $brown:$black;
 $beige-light:$black;
@@ -38,7 +50,7 @@ $pink:$black;
 $beige-lighter: white;
 
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: "YS", sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
@@ -62,10 +74,29 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+//header
+@import "./header/header.scss";
+@import "./header/header__wrapper.scss";
+@import "./header/header__navigation.scss";
+@import "./header/header__logo.scss";
+@import "./header/navbar-start__item.scss";
+@import "./header/navbar-end__item.scss";
+//intro
+@import "./intro/intro.scss";
+@import "./intro/intro__content.scss";
+@import "./intro/intro__title.scss";
+@import "./intro/intro__title-change.scss";
+@import "./intro/intro__subtitle.scss";
+@import "./intro/intro__description.scss";
+@import "./intro/intro__button.scss";
+@import "./intro/intro__girl.scss";
+@import "./intro/intro__lamp.scss";
+@import "./intro/intro__subtitle-marked_violet.scss";
+@import "./intro/intro__subtitle-marked_yellow.scss";
+// professions 
 @import "../node_modules/bulma/sass/grid/columns.sass";
-
 @import "./professions/professions.scss";
 @import "./main/main.scss";
-
-
+// footer
+@import "./footer/footer.scss";
 

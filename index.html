@@ -1,35 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="apple-touch-icon" href="icon.png" />
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/mystyles.css">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/mystyles.css" />
 
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#fafafa" />
 </head>
-
 <body>
-  <header name="header">
-
+  <header name="header" class="header">
+    <div class="header__wrapper">
+      <nav class="header__navigation navbar">
+        <div class="navbar-start">
+          <a class="navbar-start__item navbar-item">О нас</a>
+          <a class="navbar-start__item navbar-item">Вакансии</a>
+        </div>
+        <img src="./img/logo-yandex.svg" alt="логотип Яндекса" class="header__logo navbar-item">
+        <div class="navbar-end">
+          <a class="navbar-end__item navbar-item">О нас</a>
+          <a class="navbar-end__item navbar-item">Вакансии</a>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main">
-    <section name="intro">
-
+    <section name="intro" class="intro">
+      <div class="intro__content">
+        <img class="intro__girl" src="./images/intro-girl.svg" alt="рисунок девушки с ноутбуком">
+        <img class="intro__lamp" src="./images/intro-lamp.svg" alt="рисунок лампочки">
+        <h1 class="intro__title">Работа — <br>
+          <div class="intro__title-change-block">
+            <span class="intro__title-change">вдохновлять!</span>
+          </div>
+        </h1>
+        <p class="intro__subtitle">Меняем <span class="intro__subtitle-marked_violet"> знания и опыт</span><br>
+          <span class="intro__subtitle-marked_yellow">на деньги</span>
+        </p>
+        <p class="intro__description">Делитесь своим опытом в программировании, анализе <br> данных, менеджменте,
+          маркетинге
+          или дизайне и получайте <br> дополнительный доход.</p>
+        <button class="button intro__button is-black">Хочу поделиться знаниями</button>
+      </div>
     </section>
     <section name="professions" class="professions">
       <div class="columns is-centered">
@@ -71,48 +97,158 @@
     <section name="entry-test">
 
     </section>
-    <section name="steps">
-
-    </section>
-    <section name="areas">
-
-    </section>
-    <section name="responsibilities">
-
-    </section>
-    <section name="vacancies">
-
-    </section>
-    <section name="reviews">
-
-    </section>
-    <section name="values">
-
-    </section>
-
-    <section name="contacts">
-
-    </section>
-    <section name="faq">
-
-    </section>
-  </main>
-  <footer name="footer">
-
-  </footer>
-
+    <section name="professions"></section>
+    <section name="entry-test"></section>
+    <section name="steps"></section>
+    <section name="areas"></section>
+    <section name="responsibilities"></section>
+    <section name="vacancies"></section>
+    <section name="reviews"></section>
+    <section name="values"></section>
+    <section name="contacts"></section>
+    <section name="faq"></section>
+    </main>
+    <footer name="footer" class="footer">
+      <ul class="footer__contacts">
+        <li class="footer__logo">
+          <img
+            class="'footer__logo-img"
+            src="./images/praktikum-logo.svg"
+            alt="Логотип Яндекс Практикума"
+          />
+        </li>
+        <li class="footer__call">
+          <p class="footer__phone-number">8 800 700-93-29</p>
+          <p class="footer__free-call">Звонок по России бесплатный</p>
+        </li>
+        <li class="footer__social-links">
+          <a
+            class="footer__vk-link footer__link"
+            target="_blank"
+            src="https://vk.com/yandex.practicum"
+          >
+          </a>
+          <a class="footer__telegram-link footer__link" target="_blank" src="#">
+          </a>
+          <a
+            class="footer__journal-link footer__link"
+            src="https://thecode.media/"
+            target="_blank"
+            >Журнал
+          </a>
+        </li>
+        <li class="footer__copyright">
+          <p class="footer__copyright-text">
+            &copy; 2022 АНО ДПО «ШАД», ООО «Яндекс»
+          </p>
+        </li>
+      </ul>
+      <nav>
+        <ul class="footer__nav-bar">
+          <li class="footer__nav-item">
+            <a
+              class="footer__nav-link footer__link"
+              target="_blank"
+              href="https://yandex.ru/support/praktikum/feedback.html"
+              >Помощь</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a
+              class="footer__nav-link footer__link"
+              target="_blank"
+              href="http://praktikum.yandex.ru/job"
+              >Вакансии</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a
+              class="footer__nav-link footer__link"
+              target="_blank"
+              href="https://code.s3.yandex.net/License%20YSDA.pdf"
+              >Лицензия</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a
+              class="footer__nav-link footer__link"
+              target="_blank"
+              href="https://yandex.ru/legal/praktikum_termsofuse/"
+              >Правовая информация</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a
+              class="footer__nav-link footer__link"
+              target="_blank"
+              href="https://praktikum.yandex.ru/employment"
+              >Для работодателей</a
+            >
+          </li>
+          <li class="footer__nav-item">
+            <a
+              class="footer__nav-link footer__link"
+              target="_blank"
+              href="https://praktikum.yandex.ru/reviews/"
+              >Отзывы</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__info">
+        <li>
+          <p class="footer__paragraph">
+            Информация на данной странице описывает возможные варианты получения
+            дополнительного дохода в месяц (т.н. подработка). Не является
+            предложением о работе. Размещенные объявления о потребности в тех
+            или иных услугах не являются вакансиями.
+          </p>
+        </li>
+        <li>
+          <p class="footer__paragraph">
+            Образовательные услуги оказываются АНО ДПО «ШАД». ШАД — это
+            <a
+              class="footer__info-link footer__link"
+              target="_blank"
+              href="https://academy.yandex.ru/dataschool/"
+              >Школа анализа данных</a
+            >, основанная Яндексом и оказывающая образовательные услуги на
+            основании
+            <a
+              class="footer__info-link footer__link"
+              target="_blank"
+              href="https://code.s3.yandex.net/License%20YSDA.pdf"
+              >Лицензии № 036031</a
+            >
+            от 24 марта 2015 года.
+          </p>
+        </li>
+        <li>
+          <p class="footer__paragraph">
+            Сертификат о прохождении обучения по программе дополнительного
+            профессионального образования также выдается АНО ДПО «ШАД».
+          </p>
+        </li>
+      </ul>
+    </footer>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js" type="module"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- сносим ли мы гугл аналитикс?? -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    window.ga = function () {
+      ga.q.push(arguments);
+    };
+    ga.q = [];
+    ga.l = +new Date();
+    ga("create", "UA-XXXXX-Y", "auto");
+    ga("set", "anonymizeIp", true);
+    ga("set", "transport", "beacon");
+    ga("send", "pageview");
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
-
 </body>
 
 </html>
