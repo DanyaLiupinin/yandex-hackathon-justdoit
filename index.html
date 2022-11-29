@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/mystyles.css" />
-
   <meta name="theme-color" content="#fafafa" />
 </head>
 <body>
@@ -157,7 +156,25 @@
     <section name="vacancies"></section>
     <section name="reviews"></section>
     <section name="values"></section>
-    <section name="contacts"></section>
+    <section name="contacts" class="contacts">
+        <a href="#" class="open-popup">
+          <div class="js-modal-trigger contacts_col contacts_col_left" data-target="modal-js-example">
+            <img src="./images/Pic_rocket.svg"class="contacts_image_rocket">
+            <p class="bd-notification is-primary contacts_subtitle">Не нашёл подходящей вакансии?</p>
+            <h2 class=" title is-2 contacts_title">Расскажи нам</h2>
+            <p class="bd-notification is-primary contacts_subtitle">о себе и своём опыте</p>
+          </div>
+        </a>
+        <a href="https://thecode.media/" target="_blank">
+          <div class="contacts_col contacts_col_right">
+            <img src="./images/Group 33.svg" class="contacts_image_group">
+            <img src="./images/Pic_airplane.svg"class="contacts_image_plane">
+            <p class="bd-notification is-primary contacts_subtitle">Хочешь узнать больше о Яндекс.Практикуме?</p>
+            <h2 class=" title is-2 contacts_title">Загляни в наш блог</h2>
+            <p class="bd-notification is-primary contacts_subtitle">и познакомься с жизнью внутри комьюнити</p>
+          </div>
+        </a>
+      </section>
     <section name="faq"></section>
     </main>
     <footer name="footer" class="footer">
@@ -286,21 +303,48 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js" type="module"></script>
+    <div class="popup__bg"> 
+      <form class="popup">
+          <img src="images/close.svg" class="close-popup">
+          <label>
+              <input type="text" name="name">
+              <div class="label__text">
+                  Ваше имя
+              </div>
+          </label>
+          <label>
+              <input type="tel" name="tel">
+              <div class="label__text">
+                  Ваш телефон
+              </div>
+          </label>
+          <label>
+              <textarea name="message"></textarea>
+              <div class="label__text">
+                  Ваше сообщение
+              </div>
+          </label>
+          <button type="submit">Отправить</button>
+      </form>
+  </div>  
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <!-- сносим ли мы гугл аналитикс?? -->
-  <script>
-    window.ga = function () {
-      ga.q.push(arguments);
-    };
-    ga.q = [];
-    ga.l = +new Date();
-    ga("create", "UA-XXXXX-Y", "auto");
-    ga("set", "anonymizeIp", true);
-    ga("set", "transport", "beacon");
-    ga("send", "pageview");
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contacts.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!-- сносим ли мы гугл аналитикс?? -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>

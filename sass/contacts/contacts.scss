@@ -1,0 +1,190 @@
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.contacts_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+.contacts_subtitle{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.contacts_col{
+    position: relative;
+    margin-right: 20px;
+    border-radius: 20px;
+    height: 329px;
+    width: 608px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contacts_col:not(:last-child):after{
+    margin-right: 0;
+} 
+
+.contacts_col_left{
+background-color: $yellow-tertiary;
+}
+
+.contacts_col_right{
+background-color: $violet-tertiary;
+}
+
+.contacts_button{
+    border: none;
+}
+
+
+.contacts_image_group{
+position: absolute;
+bottom: 10px;
+    left: 10px;
+    max-height: 70px;
+    max-width: 190px;
+}
+
+.contacts_image_plane{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    max-height: 220px;
+    max-width: 160px;
+}
+
+.contacts_image_rocket{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    max-height: 110px;
+    max-width: 160px;
+}
+
+.contacts_popup{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+}
+
+
+/* Важная часть */
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0; // Скрываем фон и сам попап
+    pointer-events: none; // Запрещаем ему быть целью событий
+    transition: 0.5s all;
+}
+
+.popup__bg.active { // При добавлении класса 'active'
+    opacity: 1; // Показываем фон и попап
+    pointer-events: all; // Возвращаем события
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+    background: #fff;
+    width: 400px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.popup.active { // При добавлении класса 'active'
+    transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+    transition: 0.5s all;
+}
+/* Конец важной части */
+/* Далее код для стилизации формы */
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popup .label__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0d3;
+    margin-bottom: 5px;
+}
+
+.popup input {
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+}
+
+.popup input:focus {
+    border-bottom: 1px solid #2982ff;
+}
+
+.popup input:focus + .label__text {
+    color: #2982ff;
+}
+
+.popup textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.popup textarea:focus {
+    border-bottom: 1px solid #2982ff;
+}
+
+.popup textarea:focus + .label__text {
+    color: #2982ff;
+}
+
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #2982ff;
+    background: #2982ff;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+.popup button:hover {
+    background: #fff;
+    color:#2982ff;
+    transition: 0.5s all;
+}
