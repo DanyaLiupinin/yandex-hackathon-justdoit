@@ -3414,14 +3414,23 @@ a.navbar-item,
       .section.is-large {
         padding: 18rem 6rem; } }
 
-// header
+.header {
+  height: 64px; }
+
+.header__wrapper {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #EAEAEA; }
 
 .header__navigation {
   max-width: 1256px;
   margin: 0 auto;
   height: 64px;
-  position: sticky;
-  top: 0; }
+  background-color: #EAEAEA; }
 
 .header__logo {
   padding: 0;
@@ -3441,8 +3450,6 @@ a.navbar-item,
 .navbar-end__item:not(:last-child) {
   margin-right: 120px; }
 
-// intro
-
 .intro {
   width: 1163px;
   margin: 80px auto 0;
@@ -3458,8 +3465,7 @@ a.navbar-item,
   font-size: 60px;
   font-weight: 700;
   line-height: 63px;
-  text-align: center;
-  outline: 1px solid red; }
+  text-align: center; }
 
 .intro__title-change {
   animation-name: opacity;
@@ -3498,8 +3504,9 @@ a.navbar-item,
 
 .intro__lamp {
   position: absolute;
-  top: -144px;
-  right: 0; }
+  top: -148px;
+  right: 0;
+  z-index: 100; }
 
 .intro__subtitle-marked_violet {
   background-color: #9D85F4; }
