@@ -1,0 +1,7 @@
+.navbar-end__item {
+  padding: 0;
+}
+
+.navbar-end__item:not(:last-child) {
+  margin-right: 120px;
+}

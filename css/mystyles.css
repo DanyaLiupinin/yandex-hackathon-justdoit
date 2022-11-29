@@ -3413,3 +3413,28 @@ a.navbar-item,
         padding: 9rem 4.5rem; }
       .section.is-large {
         padding: 18rem 6rem; } }
+
+.header__navigation {
+  max-width: 1256px;
+  margin: 0 auto;
+  height: 64px;
+  position: sticky;
+  top: 0; }
+
+.header__logo {
+  padding: 0;
+  width: 164px;
+  height: 30px;
+  margin: auto 0; }
+
+.navbar-start__item {
+  padding: 0; }
+
+.navbar-start__item:not(:first-child) {
+  margin-left: 120px; }
+
+.navbar-end__item {
+  padding: 0; }
+
+.navbar-end__item:not(:last-child) {
+  margin-right: 120px; }
