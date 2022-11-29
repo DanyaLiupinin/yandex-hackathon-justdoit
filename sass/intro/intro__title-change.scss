@@ -1,0 +1,11 @@
+.intro__title-change {
+  @keyframes opacity {
+    0% { opacity: 0 }
+    50% { opacity: 1 }
+    100% { opacity: 0 }
+  }
+    animation-name: opacity;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}

@@ -37,6 +37,12 @@ $purple: $black;
 $pink: $black;
 $beige-lighter: white;
 
+$brown:$black;
+$beige-light:$black;
+$purple:$black;
+$pink:$black;
+$beige-lighter: white;
+
 // Update Bulma's global variables
 $family-sans-serif: "YS", sans-serif;
 $grey-dark: $brown;
@@ -63,6 +69,24 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 
-// import block styles
-
+//header
+@import "./header/header.scss";
+@import "./header/header__wrapper.scss";
+@import "./header/header__navigation.scss";
+@import "./header/header__logo.scss";
+@import "./header/navbar-start__item.scss";
+@import "./header/navbar-end__item.scss";
+//intro
+@import "./intro/intro.scss";
+@import "./intro/intro__content.scss";
+@import "./intro/intro__title.scss";
+@import "./intro/intro__title-change.scss";
+@import "./intro/intro__subtitle.scss";
+@import "./intro/intro__description.scss";
+@import "./intro/intro__button.scss";
+@import "./intro/intro__girl.scss";
+@import "./intro/intro__lamp.scss";
+@import "./intro/intro__subtitle-marked_violet.scss";
+@import "./intro/intro__subtitle-marked_yellow.scss";
+// footer
 @import "./footer/footer.scss";
