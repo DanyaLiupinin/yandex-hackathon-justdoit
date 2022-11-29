@@ -31,6 +31,12 @@ $violet-accent: #6740ED;
 $orange-accent: #EE7F32;
 $green-accent: #68DF77;
 
+$brown:$black;
+$beige-light:$black;
+$purple:$black;
+$pink:$black;
+$beige-lighter: white;
+
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
 $grey-dark: $brown;
@@ -56,3 +62,10 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
+
+@import "./professions/professions.scss";
+@import "./main/main.scss";
+
+
+
