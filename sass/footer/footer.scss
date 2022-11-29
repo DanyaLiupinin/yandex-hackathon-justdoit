@@ -1,12 +1,20 @@
+body {
+  background-color: red;
+}
+
 .footer {
   width: 100%;
   display: flex;
-  padding: 92px 32px;
+  justify-content: space-between;
+  padding: 32px 92px;
+  border-radius: 24px 24px 0px 0px;
+  background-color: white;
 }
 
 .footer__contacts {
   display: flex;
   flex-direction: column;
+  width: 284px;
 }
 
 .footer__logo {
@@ -19,8 +27,18 @@
   margin: 24px 0;
 }
 
+.footer__phone-number {
+  opacity: 85%;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.45;
+}
+
 .footer__free-call {
   color: $gray-primary;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 .footer__social-links {
@@ -52,19 +70,35 @@
   }
 }
 
+.footer__journal-link {
+  opacity: 85%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .footer__copyright-text {
   color: $gray-primary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 .footer__nav-bar {
-  padding-left: 55px;
+  padding-left: 40px;
   padding-right: 140px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 20px;
 }
 
 .footer__nav-item {
+  max-height: 20px;
+}
+
+.footer__nav-link {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.18;
 }
 
 .footer__info {
@@ -72,11 +106,18 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 608px;
 }
 
 .footer__info-link {
   text-decoration: underline;
   color: $gray-primary;
+}
+
+.footer__paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 .footer__link:hover {
