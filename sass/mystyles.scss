@@ -4,11 +4,32 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
 // Set your brand colors
-$purple: #8A4D76;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
+
+// Main
+
+$black: #000000;
+$white: #FFFFFF;
+$gray-primary: #858585;
+$gray-secondary: #EAEAEA;
+$gray-tertiary: #F5F5F5;
+
+// Additional
+
+$green-secondary: #9EEAA8;
+$yellow-secondary: #FDEE93;
+$yellow-tertiary: #FEF9D8;
+$orange-secondary: #F4AD7C;
+$orange-teritary: #FBE2D0;
+$violet-secondary: #9D85F4;
+$violet-tertiary: #DCD3FB;
+$green-tertiary: #DCF7E0;
+
+// Accents
+
+$yellow-accent: #FBE556;
+$violet-accent: #6740ED;
+$orange-accent: #EE7F32;
+$green-accent: #68DF77;
 
 // Update Bulma's global variables
 $family-sans-serif: "Nunito", sans-serif;
@@ -35,11 +56,7 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
-
 @import "./header/header__navigation.scss";
 @import "./header/header__logo.scss";
 @import "./header/navbar-start__item.scss";
 @import "./header/navbar-end__item.scss";
-
-
-
