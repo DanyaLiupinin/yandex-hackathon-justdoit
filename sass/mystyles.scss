@@ -49,6 +49,12 @@ $purple:$black;
 $pink:$black;
 $beige-lighter: white;
 
+$brown:$black;
+$beige-light:$black;
+$purple:$black;
+$pink:$black;
+$beige-lighter: white;
+
 // Update Bulma's global variables
 $family-sans-serif: "YS", sans-serif;
 $grey-dark: $brown;
@@ -63,6 +69,8 @@ $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+
+@import "./steps/steps.scss";
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
@@ -93,10 +101,13 @@ $input-shadow: none;
 @import "./intro/intro__lamp.scss";
 @import "./intro/intro__subtitle-marked_violet.scss";
 @import "./intro/intro__subtitle-marked_yellow.scss";
-// professions 
+// professions
 @import "../node_modules/bulma/sass/grid/columns.sass";
 @import "./professions/professions.scss";
 @import "./main/main.scss";
+//steps
+@import "../node_modules/bulma/sass/grid/tiles.sass";
 // footer
 @import "./footer/footer.scss";
+
 
