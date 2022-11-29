@@ -1,0 +1,7 @@
+.navbar-start__item {
+  padding: 0;
+}
+
+.navbar-start__item:not(:first-child) {
+  margin-left: 120px;
+}

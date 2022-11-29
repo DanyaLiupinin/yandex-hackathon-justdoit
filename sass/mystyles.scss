@@ -62,6 +62,11 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+//header
+@import "./header/header__navigation.scss";
+@import "./header/header__logo.scss";
+@import "./header/navbar-start__item.scss";
+@import "./header/navbar-end__item.scss";
 //intro
 @import "./intro/intro.scss";
 @import "./intro/intro__content.scss";
