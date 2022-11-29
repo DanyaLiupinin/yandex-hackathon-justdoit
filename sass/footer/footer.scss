@@ -1,16 +1,84 @@
 .footer {
   width: 100%;
   display: flex;
-  padding-left: 92px;
-  padding-right: 93px;
+  padding: 92px 32px;
 }
+
 .footer__contacts {
-  padding-top: 32px;
   display: flex;
   flex-direction: column;
 }
+
 .footer__logo {
   width: 164px;
   height: 30px;
   object-fit: cover;
+}
+
+.footer__call {
+  margin: 24px 0;
+}
+
+.footer__free-call {
+  color: $gray-primary;
+}
+
+.footer__social-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.footer__vk-link {
+  display: block;
+  background-image: url("../../images/vk.svg");
+  height: 36px;
+  width: 36px;
+  background-size: contain;
+  &:hover {
+    background-image: url("../../images/vk-hover.svg");
+  }
+}
+
+.footer__telegram-link {
+  display: block;
+  background-image: url("../../images/telegram.svg");
+  height: 36px;
+  width: 36px;
+  background-size: contain;
+  &:hover {
+    background-image: url("../../images/telegram-hover.svg");
+  }
+}
+
+.footer__copyright-text {
+  color: $gray-primary;
+}
+
+.footer__nav-bar {
+  padding-left: 55px;
+  padding-right: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer__nav-item {
+}
+
+.footer__info {
+  color: $gray-primary;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__info-link {
+  text-decoration: underline;
+  color: $gray-primary;
+}
+
+.footer__link:hover {
+  color: $violet-accent;
 }

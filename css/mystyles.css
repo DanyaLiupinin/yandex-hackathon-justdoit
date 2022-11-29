@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+@import url("../fonts/fonts.css");
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
 .file-name {
@@ -191,7 +191,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Nunito", sans-serif; }
+  font-family: "YS", sans-serif; }
 
 code,
 pre {
@@ -3417,11 +3417,9 @@ a.navbar-item,
 .footer {
   width: 100%;
   display: flex;
-  padding-left: 92px;
-  padding-right: 93px; }
+  padding: 92px 32px; }
 
 .footer__contacts {
-  padding-top: 32px;
   display: flex;
   flex-direction: column; }
 
@@ -3429,3 +3427,56 @@ a.navbar-item,
   width: 164px;
   height: 30px;
   object-fit: cover; }
+
+.footer__call {
+  margin: 24px 0; }
+
+.footer__free-call {
+  color: #858585; }
+
+.footer__social-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 34px; }
+
+.footer__vk-link {
+  display: block;
+  background-image: url("../../images/vk.svg");
+  height: 36px;
+  width: 36px;
+  background-size: contain; }
+  .footer__vk-link:hover {
+    background-image: url("../../images/vk-hover.svg"); }
+
+.footer__telegram-link {
+  display: block;
+  background-image: url("../../images/telegram.svg");
+  height: 36px;
+  width: 36px;
+  background-size: contain; }
+  .footer__telegram-link:hover {
+    background-image: url("../../images/telegram-hover.svg"); }
+
+.footer__copyright-text {
+  color: #858585; }
+
+.footer__nav-bar {
+  padding-left: 55px;
+  padding-right: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px; }
+
+.footer__info {
+  color: #858585;
+  display: flex;
+  flex-direction: column;
+  gap: 24px; }
+
+.footer__info-link {
+  text-decoration: underline;
+  color: #858585; }
+
+.footer__link:hover {
+  color: #6740ed; }
