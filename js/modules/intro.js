@@ -3,7 +3,7 @@ const title = document.querySelector('.intro__title-change');
 const messages = [
   'учить!',
   'помогать!',
-  'проверять!',
+  'направлять!',
   'вдохновлять!'
 ]
 

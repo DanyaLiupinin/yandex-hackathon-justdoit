@@ -62,13 +62,15 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+//intro
 @import "./intro/intro.scss";
 @import "./intro/intro__content.scss";
 @import "./intro/intro__title.scss";
-@import "./intro/intro__titile-change-block.scss";
 @import "./intro/intro__title-change.scss";
 @import "./intro/intro__subtitle.scss";
 @import "./intro/intro__description.scss";
 @import "./intro/intro__button.scss";
 @import "./intro/intro__girl.scss";
 @import "./intro/intro__lamp.scss";
+@import "./intro/intro__subtitle-marked_violet.scss";
+@import "./intro/intro__subtitle-marked_yellow.scss";
