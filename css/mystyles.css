@@ -3429,15 +3429,8 @@ a.navbar-item,
   font-size: 60px;
   font-weight: 700;
   line-height: 63px;
-  text-align: initial; }
-
-.intro__titile-change-block {
-  text-align: initial;
-  display: inline;
-  width: 395px;
-  position: absolute;
-  top: 0;
-  right: 255px; }
+  text-align: center;
+  outline: 1px solid red; }
 
 .intro__title-change {
   animation-name: opacity;
@@ -3453,10 +3446,9 @@ a.navbar-item,
     opacity: 0; } }
 
 .intro__subtitle {
-  margin-top: 36px;
+  margin-top: 32px;
   font-weight: 700;
-  font-size: 42px;
-  line-height: 46.2px; }
+  font-size: 42px; }
 
 .intro__description {
   margin-top: 24px;
@@ -3479,3 +3471,9 @@ a.navbar-item,
   position: absolute;
   top: -144px;
   right: 0; }
+
+.intro__subtitle-marked_violet {
+  background-color: #9D85F4; }
+
+.intro__subtitle-marked_yellow {
+  background-color: #FDEE93; }
