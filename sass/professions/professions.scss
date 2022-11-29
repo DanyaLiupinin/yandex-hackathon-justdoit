@@ -1,0 +1,68 @@
+.professions {
+  height: 360px;
+}
+
+.professions_left {
+  border-right: 1px solid $gray-secondary;
+  background-color: white;
+  border-top-left-radius: 150px;
+}
+
+.professions_right {
+  background-color: white;
+  border-top-right-radius: 150px;
+}
+
+.professions_dot {
+  height: 15px;
+  width: 15px;
+  background-color: $orange-secondary;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.professions_title_left {
+  margin-right: 400px;
+  text-align: end;
+  padding-bottom: 10px;
+}
+
+.professions_title_right {
+  margin-left: 170px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.professions_col_left {
+  justify-content: end;
+}
+
+.professions_col_right {
+  justify-content: left;
+  max-width: 80%;
+}
+
+.professions_image_left {
+  max-width: 180px;
+  margin-right: 20px;
+  margin-left: 60px;
+}
+
+.professions_image_right {
+  max-width: 207px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.professions_link {
+  color: $violet-secondary;
+  border: none;
+  background-color: transparent;
+  width: 290px;
+  height: 30px;
+}
+
+.professions_link:hover {
+  background-color: $gray-secondary;
+  border-radius: 30px;
+}

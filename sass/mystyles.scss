@@ -43,6 +43,12 @@ $purple:$black;
 $pink:$black;
 $beige-lighter: white;
 
+$brown:$black;
+$beige-light:$black;
+$purple:$black;
+$pink:$black;
+$beige-lighter: white;
+
 // Update Bulma's global variables
 $family-sans-serif: "YS", sans-serif;
 $grey-dark: $brown;
@@ -68,7 +74,6 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
-
 //header
 @import "./header/header.scss";
 @import "./header/header__wrapper.scss";
@@ -88,5 +93,10 @@ $input-shadow: none;
 @import "./intro/intro__lamp.scss";
 @import "./intro/intro__subtitle-marked_violet.scss";
 @import "./intro/intro__subtitle-marked_yellow.scss";
+// professions 
+@import "../node_modules/bulma/sass/grid/columns.sass";
+@import "./professions/professions.scss";
+@import "./main/main.scss";
 // footer
 @import "./footer/footer.scss";
+
