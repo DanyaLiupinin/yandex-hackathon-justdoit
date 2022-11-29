@@ -3424,13 +3424,13 @@ a.navbar-item,
   top: 0;
   left: 0;
   right: 0;
-  background-color: #EAEAEA; }
+  background-color: #eaeaea; }
 
 .header__navigation {
   max-width: 1256px;
   margin: 0 auto;
   height: 64px;
-  background-color: #EAEAEA; }
+  background-color: #eaeaea; }
 
 .header__logo {
   padding: 0;
@@ -3509,10 +3509,10 @@ a.navbar-item,
   z-index: 100; }
 
 .intro__subtitle-marked_violet {
-  background-color: #9D85F4; }
+  background-color: #9d85f4; }
 
 .intro__subtitle-marked_yellow {
-  background-color: #FDEE93; }
+  background-color: #fdee93; }
 
 .footer {
   width: 100%;
