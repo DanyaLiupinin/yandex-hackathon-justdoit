@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "sass": "^1.56.1",
-    "slick-carousel": "^1.8.1"
+    "vanilla-js-carousel": "^3.1.2"
   }
 }
