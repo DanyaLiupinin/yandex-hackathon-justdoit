@@ -1,5 +1,5 @@
 {
-  "name": " name ",
+  "name": "yandex-hackathon-justdoit",
   "version": "0.0.1",
   "description": " ",
   "main": "sass/mystyles.scss",
@@ -9,6 +9,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "npm run css-watch && npm run build && npm run dev",
     "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
     "css-watch": "npm run css-build -- --watch",
