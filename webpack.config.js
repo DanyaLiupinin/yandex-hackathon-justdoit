@@ -29,14 +29,25 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        test: /\.css$/,
+        test: /\.(css|scss)$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          // Creates `style` nodes from JS strings
+          {
+            loader: "style-loader",
+          },
+          // Translates CSS into CommonJS
           {
             loader: "css-loader",
-            options: { importLoaders: 1 },
           },
-          "postcss-loader",
+          {
+            loader: "resolve-url-loader",
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
         ],
       },
     ],
