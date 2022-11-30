@@ -2,6 +2,8 @@
 
 // Import a Google Font
 @import url("../fonts/fonts.css");
+@import url("../css/normalize.css");
+@import url("../css/main.css");
 
 // Set your brand colors
 
@@ -105,10 +107,13 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/grid/columns.sass";
 @import "./professions/professions.scss";
 @import "./main/main.scss";
+
+// values
+@import "./values/values.scss";
 //steps
 @import "../node_modules/bulma/sass/grid/tiles.sass";
 // footer
 @import "./footer/footer.scss";
-// reviews
+/* // reviews
 @import "./reviews/reviews.scss";
-@import "./reviews/vanilla-js-carousel.scss";
+@import "./reviews/vanilla-js-carousel.scss"; */
