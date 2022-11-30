@@ -3490,16 +3490,28 @@ a.navbar-item,
   margin: auto 0; }
 
 .navbar-start__item {
-  padding: 0; }
+  padding: 0;
+  height: fit-content;
+  margin: auto 0;
+  transition: .2s; }
 
 .navbar-start__item:not(:first-child) {
   margin-left: 120px; }
 
+.navbar-start__item:hover {
+  opacity: .7; }
+
 .navbar-end__item {
-  padding: 0; }
+  padding: 0;
+  height: fit-content;
+  margin: auto 0;
+  transition: .2s; }
 
 .navbar-end__item:not(:last-child) {
   margin-right: 120px; }
+
+.navbar-end__item:hover {
+  opacity: .9; }
 
 .intro {
   width: 1163px;
