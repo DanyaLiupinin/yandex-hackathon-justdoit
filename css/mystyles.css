@@ -3558,7 +3558,14 @@ a.navbar-item,
 .intro__button {
   margin-top: 40px;
   height: 55px;
-  border-radius: 55px; }
+  border-radius: 55px;
+  border: 0;
+  padding: 0;
+  min-width: 270px;
+  transition: .2s; }
+
+.intro__button:hover {
+  opacity: .8; }
 
 .intro__girl {
   position: absolute;
@@ -4616,7 +4623,7 @@ a.navbar-item,
 
 .responsibilities__card-title {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 27px;
   margin-top: 36px; }
 
@@ -4624,7 +4631,9 @@ a.navbar-item,
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
-  margin-top: 16px; }
+  margin-top: 16px;
+  margin-left: 20px;
+  text-align: start; }
 
 .responsibilities__card-image {
   height: 116px;
@@ -4659,14 +4668,14 @@ a.navbar-item,
   font-size: 48px;
   font-weight: 300;
   line-height: 58px;
-  color: #f4ad7c;
+  color: #9d85f4;
   margin-right: 8px; }
 
 .responsibilities__condition:nth-child(2n) {
   margin-top: 12px; }
 
 .responsibilities__column:first-child {
-  margin-right: 8px; }
+  margin-right: 60px; }
 
 .responsibilities__button {
   height: 55px;
@@ -4677,7 +4686,11 @@ a.navbar-item,
   min-width: 247px;
   padding: 0;
   border: 0;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: .2s; }
+
+.responsibilities__button:hover {
+  opacity: .8; }
 
 .contacts {
   display: flex;
