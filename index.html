@@ -17,6 +17,14 @@
   <!-- Place favicon.ico in the root directory -->
 
   <meta name="theme-color" content="#fafafa" />
+
+  <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script> -->
+  <script src="js/main.js" type="module"></script>
+  <!-- <script src="js/entry_test.js" type="module"></script>
+  <script src="js/quiz.js"></script> -->
+
+
 </head>
 
 <body>
@@ -159,24 +167,6 @@
       <a href="#" class="test_open-popup">Открыть попап</a>
       </div>
     </section>
-    <section name="steps">
-      <h2 class="title is-2 steps_title">Стать экспертом Яндекса просто, как</h2>
-      <img src="./images/Pic_airplane.svg" class="steps_image">
-      <div class="tile is-ancestor steps">
-        <div class="tile is-4 steps_column1">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child notification is-warning">
-              <div class="steps_block1">
-                <p class="steps_block1_title">раз</p>
-                <p class="steps_block1_subtitle">Выберите роль и заполните заявку</p>
-              </div>  
-            </article>
-              <article class="tile is-child">
-                <div class="steps_block2"></div>
-              </article>            
-              <article class="tile is-child">
-                <div class="steps_block2"></div>
-              </article>
 
 
     <section name="areas" class="areas">
@@ -558,7 +548,7 @@
   <script src="js/main.js" type="module"></script>
   <div class="popup__bg">
     <form class="popup">
-      <img src="images/close.svg" class="close-popup">
+      <img class="close-popup" src="<%=require('./images/close.svg')%>"/>
       <label>
         <input type="text" name="name">
         <div class="label__text">
@@ -585,7 +575,7 @@
 
     <div class="test_popup__bg" id="test_popup__bg"> 
       <form class="test_popup" id="test_popup">
-        <img src="images/close.svg" class="test_close-popup">
+        <img class="test_close-popup" src="<%=require('./images/close.svg')%>">
         <h2 class="test_title">Узнай кто ты?</h2>    
           <div class="quiz_wrapper" id="quiz_wrapper">
           </div>
@@ -598,15 +588,10 @@
         <span class="test_dot test_dot5" id="test_dot5"></span>
       </div>
 
-    </form>
+      </form>
     
-  </div>  
+    </div>  
   
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js" type="module"></script>
-  <script src="js/entry_test.js" type="module"></script>
-  <script src="js/quiz.js"></script>
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
