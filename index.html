@@ -73,52 +73,36 @@
         </div>
       </section>
 
-      <section name="professions" class="professions">
-        <div class="columns is-centered">
-          <div class="column is-half professions_left">
-            <h2 class="title is-2 professions_title_left">Ревьюер</h2>
-            <div class="columns professions_col_left">
-              <ul>
-                <li>
-                  <span class="professions_dot"></span> Проверяет код и проекты
-                  студентов
-                </li>
-                <li>
-                  <span class="professions_dot"></span> Простыми словами
-                  объясняет им их ошибки
-                </li>
-                <li>
-                  <span class="professions_dot"></span> Даёт корректирующую
-                  обратную связь
-                </li>
-                <li>
-                  <span class="professions_dot"></span> Оценивает работы —
-                  зачёт/незачёт
-                </li>
-                <li><button href=# class="professions_link"> Показать вакансии ревьюера &#8594</button></li>
-              </ul>
-              <figure class="image">
-                <img
-                  class="professions_image_left"
-                  src="<%=require('./images/Pic_girl.svg')%>"
-                />
-              </figure>
-            </div>
+    <section name="professions" class="professions">
+      <div class="columns is-centered">
+        <div class="column is-half professions_left">
+          <figure class="image">
+            <img class="professions_image_left" src="./images/professions-image-left.svg">
+          </figure>
+          <h2 class="title is-2 professions_title_left">Ревьюер</h2>
+          <div class="columns professions_col_left">
+            <ul type="circle">
+              <li class="professions__item"><span class="professions__dot"></span>Проверяет код и проекты студентов</li>
+              <li class="professions__item"><span class="professions__dot"></span>Простыми словами объясняет <br> им их ошибки</li>
+              <li class="professions__item"><span class="professions__dot"></span>Даёт корректирующую обратную <br> связь</li>
+              <li class="professions__item"><span class="professions__dot"></span>Оценивает работы — зачёт/незачёт</li>
+              <li class="professions__button"><button href=# class="professions_link"> Хочу стать ревьюером</button></li>
+            </ul>
           </div>
 
-        <div class="column professions_right ">
+        <div class="column professions_right">
+          <figure class="image">
+            <img class="professions_image_right" src="./images/professions-image-right.svg">
+          </figure>
           <h2 class="title is-2 professions_title_right">Наставник</h2>
           <div class="columns professions_col_right">
-              <figure class="image">
-                <img class="professions_image_right" src="<%=require('./images/Pic_boy.svg')%>">
-              </figure>
-          <ul>
-            <li><span class="professions_dot"></span>  Помогает студентам ставить цели, рефлексировать и делать выводы</li>
-            <li><span class="professions_dot"></span>  Отвечает на их вопросы в чате</li>
-            <li><span class="professions_dot"></span>  Проводит вебинары 2 раза в месяц и даёт обратную связь</li>
-            <li><span class="professions_dot"></span>  Делится опытом и мотивирует
-            <li><button href=# class="professions_link">Показать вакансии наставника &#8594</button></li>
-          </ul>
+            <ul class="professions__ul">
+             <li class="professions__item"> <span class="professions__dot"></span> Помогает студентам ставить цели, <br> рефлексировать и делать выводы</li>
+              <li class="professions__item">  <span class="professions__dot"></span>Отвечает на их вопросы в чате</li>
+              <li class="professions__item"><span class="professions__dot"></span>Проводит вебинары 2 раза в месяц <br> и даёт обратную связь</li>
+              <li class="professions__item"><span class="professions__dot"></span>Делится опытом и мотивирует
+              <li class="professions__button"><button href=# class="professions_link">Хочу стать наставником</button></li>
+            </ul>
           </div>
 
         </div>
@@ -169,24 +153,154 @@
               </article>
             </div>
           </div>
-          <div class="tile steps_column3">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child notification is-primary">
-                <div class="steps_block2"></div>
-              </article>
-              <article class="tile is-child notification is-warning">
-                <div class="steps_block2"></div>
-              </article>
-              <article class="tile is-child notification is-warning">
-                <div class="steps_block1">
-                  <p class="steps_block1_title">три</p>
-                  <p class="steps_block1_subtitle">
-                    Начните делиться знаниями со студентами Яндекс Практикума
-                  </p>
-                </div>
-              </article>
+        </div>
+        <div class="tile steps_column3">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-primary">
+              <div class="steps_block2"></div>
+            </article>
+            <article class="tile is-child notification is-warning">
+              <div class="steps_block2"></div>
+            </article>
+            <article class="tile is-child notification is-warning">
+              <div class="steps_block1">
+                <p class="steps_block1_title">три</p>
+                <p class="steps_block1_subtitle">Начните делиться знаниями со студентами Яндекс Практикума</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section name="areas" class="areas">
+      <h2 class="areas__title">Мы предлагаем работу</h2>
+      <p class="areas__subtitle">Выбери свою экспертную область</p>
+      <div class="areas__cards">
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">16 <br> вакансий</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Анализ данных</h3>
+              <p class="areas__vacancy-description">SQL, аналитика, Data Science <br> и архитектура данных</p>
             </div>
           </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый задумчивый факультет</h3>
+          </div>
+        </div>
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">11 <br> вакансий</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Дизайн</h3>
+              <p class="areas__vacancy-description">Графический, коммуникационный, для интерфейсов и продуктов</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый креативный факультет</h3>
+          </div>
+        </div>
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">26 <br> вакансий</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Программирование</h3>
+              <p class="areas__vacancy-description">Тестирование, фронтенд, бэкенд, DevOps <br> и алгоритмы</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый последовательный <br> факультет</h3>
+          </div>
+        </div>
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">12 <br> вакансий</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Менеджмент</h3>
+              <p class="areas__vacancy-description">Управление проектами, командами <br> и IT - рекрутмент</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый эффективный факультет</h3>
+          </div>
+        </div>
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">2 <br> вакансии</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Маркетинг</h3>
+              <p class="areas__vacancy-description">Интернет — маркетинг и управление <br> трафиком</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый успешный факультет</h3>
+          </div>
+        </div>
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">4 <br> вакансии</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Английский язык</h3>
+              <p class="areas__vacancy-description">Для работы и жизни</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый болтливый факультет</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section name="responsibilities" class="responsibilities">
+      <h2 class="responsibilities__title">В роли наставника и ревьюера ты будешь</h2>
+      <div class="responsibilities__cards">
+
+        <div class="responsibilities__card">
+          <p class="responsibilities__card-title">Менять жизнь людей</p>
+          <img class="responsibilities__card-image" src="./images/respons-image1.svg" alt="#">
+          <p class="responsibilities__card-description">Тысячи наших студентов нуждаются в ваших <br> знаниях и опыте —
+            не бойтесь ими делиться</p>
+        </div>
+
+        <div class="responsibilities__card">
+          <p class="responsibilities__card-title">Учить новому</p>
+          <img class="responsibilities__card-image" src="./images/respons-image2.svg" alt="#">
+          <p class="responsibilities__card-description">Узнаете, как давать <br> обратную связь, <br> выступать
+            на публике и мотивировать людей</p>
+        </div>
+
+        <div class="responsibilities__card">
+          <p class="responsibilities__card-title">Общаться с EdTech</p>
+          <img class="responsibilities__card-image" src="./images/respons-image3.svg" alt="#">
+          <p class="responsibilities__card-description">Станете частью <br> сообщества экспертов и посмотрите <br>
+            на мир онлайн - <br> образования изнутри</p>
+        </div>
+
+        <div class="responsibilities__card">
+          <p class="responsibilities__card-title">Развивать свой бренд</p>
+          <img class="responsibilities__card-image" src="./images/respons-image4.svg" alt="#">
+          <p class="responsibilities__card-description">Публикуйтесь в нашем <br> блоге и выступайте на мероприятиях,
+            <br> заявите о себе как об эксперте
+          </p>
         </div>
       </div>
       <div class="responsibilities__conditions">
@@ -199,20 +313,20 @@
             </p>
 
             <p class="responsibilities__condition">
-              <span class="responsibilities__condition-span">FREE</span>
-              график выбираешь сам
+              <span class="responsibilities__condition-span">2–3</span>
+              часа в день занимает проект
             </p>
           </div>
 
           <div class="responsibilities__column">
             <p class="responsibilities__condition">
-              <span class="responsibilities__condition-span">35–55</span>
-              тысяч рублей — твой доход
+              <span class="responsibilities__condition-span">FREE</span>
+              график выбираешь сам
             </p>
 
             <p class="responsibilities__condition">
-              <span class="responsibilities__condition-span">FREE</span>
-              график выбираешь сам
+              <span class="responsibilities__condition-span">≈ 50</span>
+              человек в группе учеников
             </p>
           </div>
 

@@ -2,4 +2,12 @@
   margin-top: 40px;
   height: 55px;
   border-radius: 55px;
+  border: 0;
+  padding: 0;
+  min-width: 270px;
+  transition: .2s;
+}
+
+.intro__button:hover {
+  opacity: .8;
 }

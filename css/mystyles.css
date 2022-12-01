@@ -5218,18 +5218,32 @@ a.navbar-item.is-active,
 
 .navbar-start__item {
   padding: 0;
+  height: fit-content;
+  margin: auto 0;
+  transition: 0.2s;
 }
 
 .navbar-start__item:not(:first-child) {
   margin-left: 120px;
 }
 
+.navbar-start__item:hover {
+  opacity: 0.7;
+}
+
 .navbar-end__item {
   padding: 0;
+  height: fit-content;
+  margin: auto 0;
+  transition: 0.2s;
 }
 
 .navbar-end__item:not(:last-child) {
   margin-right: 120px;
+}
+
+.navbar-end__item:hover {
+  opacity: 0.9;
 }
 
 .intro {
@@ -5288,6 +5302,14 @@ a.navbar-item.is-active,
   margin-top: 40px;
   height: 55px;
   border-radius: 55px;
+  border: 0;
+  padding: 0;
+  min-width: 270px;
+  transition: 0.2s;
+}
+
+.intro__button:hover {
+  opacity: 0.8;
 }
 
 .intro__girl {
@@ -6496,73 +6518,122 @@ a.navbar-item.is-active,
 }
 
 .professions {
-  height: 360px;
+  min-height: 439px;
   margin-top: 160px;
 }
 
 .professions_left {
   border-right: 1px solid #eaeaea;
   background-color: white;
-  border-top-left-radius: 150px;
+  max-width: 720px;
+  min-height: 439px;
+  padding: 0;
+  position: relative;
+  border-radius: 100px 0px 0px 0px;
 }
 
 .professions_right {
   background-color: white;
-  border-top-right-radius: 150px;
+  border-radius: 0px 100px 0px 0px;
+  max-width: 720px;
+  min-height: 439px;
+  position: relative;
+  padding: 0;
 }
 
-.professions_dot {
-  height: 15px;
-  width: 15px;
-  background-color: #f4ad7c;
-  border-radius: 50%;
+.professions__dot {
+  background: url("../../images/dot.svg") no-repeat;
+  width: 16px;
+  height: 25px;
   display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  object-fit: contain;
+}
+
+.professions__item {
+  text-align: end;
+  position: relative;
+  text-align: start;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.professions__item:not(:first-child) {
+  margin-top: 10px;
 }
 
 .professions_title_left {
-  margin-right: 400px;
-  text-align: end;
-  padding-bottom: 10px;
+  margin: 48px auto 0 100px;
+  margin-bottom: 0;
+  width: fit-content;
 }
 
 .professions_title_right {
-  margin-left: 170px;
-  text-align: left;
-  padding-bottom: 10px;
+  margin-top: 48px;
+  margin-left: 206px;
+  width: fit-content;
 }
 
 .professions_col_left {
-  justify-content: end;
+  border: 0;
+  width: fit-content;
+  margin-left: 122px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .professions_col_right {
-  justify-content: left;
-  max-width: 80%;
+  border: 0;
+  width: fit-content;
+  margin-left: 267px;
+  margin-top: 5px;
 }
 
 .professions_image_left {
   max-width: 180px;
-  margin-right: 20px;
-  margin-left: 60px;
+  margin-right: 32px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .professions_image_right {
   max-width: 207px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   margin-left: 20px;
-  margin-right: 20px;
 }
 
 .professions_link {
-  color: #9d85f4;
+  color: #000000;
   border: none;
-  background-color: transparent;
+  background-color: #eaeaea;
   width: 290px;
   height: 30px;
+  border-radius: 55px;
+  min-height: 40px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .professions_link:hover {
-  background-color: #eaeaea;
-  border-radius: 30px;
+  opacity: 0.8;
+}
+
+.professions__button {
+  margin-top: 42px;
+  position: relative;
+}
+
+.professions__button:last-child {
+  right: 30px;
 }
 
 .main {
@@ -6803,7 +6874,7 @@ a.navbar-item.is-active,
 
 .responsibilities__card-title {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 27px;
   margin-top: 36px;
 }
@@ -6813,6 +6884,8 @@ a.navbar-item.is-active,
   font-weight: 400;
   line-height: 27px;
   margin-top: 16px;
+  margin-left: 20px;
+  text-align: start;
 }
 
 .responsibilities__card-image {
@@ -6852,7 +6925,7 @@ a.navbar-item.is-active,
   font-size: 48px;
   font-weight: 300;
   line-height: 58px;
-  color: #f4ad7c;
+  color: #9d85f4;
   margin-right: 8px;
 }
 
@@ -6861,7 +6934,7 @@ a.navbar-item.is-active,
 }
 
 .responsibilities__column:first-child {
-  margin-right: 8px;
+  margin-right: 60px;
 }
 
 .responsibilities__button {
@@ -6874,6 +6947,11 @@ a.navbar-item.is-active,
   padding: 0;
   border: 0;
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.responsibilities__button:hover {
+  opacity: 0.8;
 }
 
 .contacts {
