@@ -1,0 +1,118 @@
+.areas {
+  width: 1256px;
+  margin: 160px auto 160px;
+  text-align: center;
+}
+
+.areas__title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+.areas__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-top: 24px;
+}
+
+.areas__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.areas__card {
+  position: relative;
+  margin-top: 40px;
+  perspective: 1000px;
+}
+
+.areas__card:nth-child(2n) {
+  margin-left: 40px;
+}
+
+.areas__vaсancy {
+  width: 147px;
+  display: flex;
+  justify-content: center;
+  background-color: $yellow-secondary;
+  border-radius: 55px 0px 0px 55px;
+}
+
+.areas__vacancy-amount {
+  margin: auto 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+}
+
+.areas__vacancy-information {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  text-align: start;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 55px 55px 0;
+  background-color: $white;
+}
+
+.areas__vacancy-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.areas__vacancy-description {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  display: block;
+  margin-left: 25px;
+  margin-top: 16px;
+}
+
+.areas__card-front {
+  display: flex;
+  flex-direction: row;
+  width: 608px;
+  height: 156px;
+}
+
+.areas__card-back {
+  background-color: $yellow-secondary;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  transform: rotateX(180deg);
+  border-radius: 55px;
+}
+
+.areas__card-caption {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37px;
+  margin: auto 0;
+}
+
+.areas__card-front,
+.areas__card-back {
+  transition: 1s;
+  backface-visibility: hidden;
+}
+
+.areas__card:hover .areas__card-front {
+  transform: rotateX(180deg);
+}
+
+.areas__card:hover .areas__card-back {
+  transform: rotateX(360deg);
+}

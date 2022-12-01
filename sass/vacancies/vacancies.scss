@@ -1,0 +1,173 @@
+.vacancies {
+  width: 1256px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.vacancies__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 110%;
+}
+
+.vacancies__filters {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 60px auto 0;
+}
+
+.vacancies__filter-block {
+  width: 282px;
+  min-height: 84px;
+  background-color: $white;
+  cursor: pointer;
+  border: 0;
+}
+
+.vacancies__filter-block:hover {
+  background-color: $violet-secondary;
+}
+
+.vacancies__filter-block:first-child {
+  border-radius: 55px 0 0 55px;
+}
+
+.vacancies__filter-block:last-child {
+  border-radius: 0 55px 55px 0;
+}
+
+.vacancies__cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.vacancies__card {
+  width: 392px;
+  min-height: 209px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: $white;
+  position: relative;
+}
+
+.vacancies__card-click {
+  padding-bottom: 20px;
+  height: 100%;
+}
+
+.vacancies__card-click:hover {
+  opacity: 0.7;
+}
+
+.vacancies__card-link {
+  width: fit-content;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-color: $white;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  bottom: 30px;
+  right: 24px;
+}
+
+.vacancies__card-link:hover {
+  opacity: 0.5;
+}
+
+.vacancies__card:nth-child(n + 4) {
+  margin-top: 15px;
+}
+
+.vacancies__card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+  text-align: start;
+  margin-top: 24px;
+  margin-left: 27px;
+}
+
+.vacancies__card-info {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.vacancies__card-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.vacancies__card-price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  color: $gray-primary;
+  text-align: end;
+  margin-top: 16px;
+  margin-right: 24px;
+}
+
+.vacancies__card-status {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  color: $gray-primary;
+  text-align: start;
+  margin-left: 24px;
+  margin-top: 16px;
+  width: fit-content;
+}
+
+.vacancies__card-button {
+  width: 189px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 135%;
+  border: 0;
+  border-radius: 55px;
+  margin-left: 27px;
+  margin-top: 16px;
+  padding: 0;
+
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  cursor: pointer;
+}
+
+.vacancies__card-button:hover {
+  opacity: 0.7;
+}
+
+.vacancies__button {
+  background-color: $black;
+  min-width: 294px;
+  min-height: 56px;
+  color: $white;
+  margin: 40px auto 0;
+  border-radius: 55px;
+}
+
+.vacancies__button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
