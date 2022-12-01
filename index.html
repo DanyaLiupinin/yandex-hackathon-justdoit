@@ -17,6 +17,14 @@
   <!-- Place favicon.ico in the root directory -->
 
   <meta name="theme-color" content="#fafafa" />
+
+  <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script> -->
+  <script src="js/main.js" type="module"></script>
+  <!-- <script src="js/entry_test.js" type="module"></script>
+  <script src="js/quiz.js"></script> -->
+
+
 </head>
 
 <body>
@@ -27,7 +35,9 @@
           <a class="navbar-start__item" href="#reviews">О нас</a>
           <a class="navbar-start__item" href="#vacancies">Вакансии</a>
         </div>
+
         <img src="<%=require('./images/logo-yandex.svg')%>" alt="логотип Яндекса" class="header__logo navbar-item" />
+
         <div class="navbar-end">
           <a class="navbar-end__item" href="#faq">Частые вопросы</a>
           <a class="navbar-end__item" href="#footer">Контакты</a>
@@ -70,6 +80,7 @@
           </figure>
           <h2 class="title is-2 professions_title_left">Ревьюер</h2>
           <div class="columns professions_col_left">
+
             <ul type="circle">
               <li class="professions__item"><span class="professions__dot"></span>Проверяет код и проекты студентов</li>
               <li class="professions__item"><span class="professions__dot"></span>Простыми словами объясняет <br> им их
@@ -80,6 +91,7 @@
               <li class="professions__button"><button href=# class="professions_link"> Хочу стать ревьюером</button>
               </li>
             </ul>
+
           </div>
         </div>
 
@@ -146,69 +158,17 @@
         </div>
 
       </div>
-
-      <!--
-      <h2 class="title is-2 steps_title">
-        Стать экспертом Яндекса просто, как
-      </h2>
-      <img src="<%=require('./images/Pic_airplane.svg')%>" class="steps_image" />
-      <div class="tile is-ancestor steps">
-        <div class="tile is-4 steps_column1">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child notification is-warning">
-              <div class="steps_block1">
-                <p class="steps_block1_title">раз</p>
-                <p class="steps_block1_subtitle">
-                  Выберите роль и заполните заявку
-                </p>
-              </div>
-            </article>
-            <article class="tile is-child">
-              <div class="steps_block2"></div>
-            </article>
-            <article class="tile is-child">
-              <div class="steps_block2"></div>
-            </article>
-          </div>
-        </div>
-        <div class="tile steps_column2">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child">
-              <div class="steps_block2"></div>
-            </article>
-            <article class="tile is-child notification is-warning">
-              <div class="steps_block1">
-                <p class="steps_block1_title">два</p>
-                <p class="steps_block1_subtitle">
-                  Пройдите отбор и бесплатное обучение
-                </p>
-              </div>
-            </article>
-            <article class="tile is-child">
-              <div class="steps_block2"></div>
-            </article>
-          </div>
-        </div>
-      </div>
-      <div class="tile steps_column3">
-        <div class="tile is-parent is-vertical">
-          <article class="tile is-child notification is-primary">
-            <div class="steps_block2"></div>
-          </article>
-          <article class="tile is-child notification is-warning">
-            <div class="steps_block2"></div>
-          </article>
-          <article class="tile is-child notification is-warning">
-            <div class="steps_block1">
-              <p class="steps_block1_title">три</p>
-              <p class="steps_block1_subtitle">Начните делиться знаниями со студентами Яндекс Практикума</p>
-            </div>
-          </article>
-        </div>
-      </div>
-      </div>
-      -->
     </section>
+
+    <section name="entry-test" class="entry-test">
+      <h2 class="entry-test_title title is-2">На чьей стороне ты?</h2>
+      <p class="entry-test_text">Не знаешь с чего начать и какая роль подойдёт лучше?</br>
+        Пройди быстрый тест, и мы подберём работу, подходящую</br> именно тебе.</p>
+        <div class="test_open-popup_wrapper">
+      <a href="#" class="test_open-popup">Открыть попап</a>
+      </div>
+    </section>
+
 
     <section name="areas" class="areas">
       <h2 class="areas__title">Мы предлагаем работу</h2>
@@ -238,6 +198,7 @@
             <div class="areas__vacancy-information">
               <h3 class="areas__vacancy-title">Дизайн</h3>
               <p class="areas__vacancy-description">Графический, коммуникационный, для интерфейсов и продуктов</p>
+
             </div>
           </div>
           <div class="areas__card-back">
@@ -480,16 +441,16 @@
           <img src="<%=require('./images/Pic_rocket.svg')%>" class="contacts_image_rocket">
           <p class="bd-notification is-primary contacts_subtitle">Не нашёл подходящей вакансии?</p>
           <h2 class=" title is-2 contacts_title">Расскажи нам</h2>
-          <p class="bd-notification is-primary contacts_subtitle">о себе и своём опыте</p>
+          <p class="bd-notification is-primary contacts_subtitle_low">о себе и своём опыте</p>
         </div>
       </a>
       <a href="https://thecode.media/" target="_blank">
         <div class="contacts_col contacts_col_right">
           <img src="<%=require('./images/Group 33.svg')%>" class="contacts_image_group">
-          <img src="<%=require('./images/Pic_airplane.svg')%>" class="contacts_image_plane">
+          <img src="<%=require('./images/Pic_airplane2.svg')%>" class="contacts_image_plane">
           <p class="bd-notification is-primary contacts_subtitle">Хочешь узнать больше о Яндекс.Практикуме?</p>
           <h2 class=" title is-2 contacts_title">Загляни в наш блог</h2>
-          <p class="bd-notification is-primary contacts_subtitle">и познакомься с жизнью внутри комьюнити</p>
+          <p class="bd-notification is-primary contacts_subtitle_low">и познакомься с жизнью внутри комьюнити</p>
         </div>
       </a>
     </section>
@@ -606,6 +567,7 @@
             href="https://praktikum.yandex.ru/reviews/">Отзывы</a>
         </li>
       </ul>
+
     </nav>
     <ul class="footer__info">
       <li>
@@ -640,7 +602,7 @@
   <script src="js/main.js" type="module"></script>
   <div class="popup__bg">
     <form class="popup">
-      <img src="images/close.svg" class="close-popup">
+      <img class="close-popup" src="<%=require('./images/close.svg')%>"/>
       <label>
         <input type="text" name="name">
         <div class="label__text">
@@ -662,6 +624,29 @@
       <button type="submit">Отправить</button>
     </form>
   </div>
+  
+    </footer>
+
+    <div class="test_popup__bg" id="test_popup__bg"> 
+      <form class="test_popup" id="test_popup">
+        <img class="test_close-popup" src="<%=require('./images/close.svg')%>">
+        <h2 class="test_title">Узнай кто ты?</h2>    
+          <div class="quiz_wrapper" id="quiz_wrapper">
+          </div>
+      <h2 class="title is-2 test_subtitle" id="test_subtitle"></h2>
+      <div class="test_dots">
+        <span class="test_dot test_dot1" id="test_dot1"></span>
+        <span class="test_dot test_dot2" id="test_dot2"></span>
+        <span class="test_dot test_dot3" id="test_dot3"></span>
+        <span class="test_dot test_dot4" id="test_dot4"></span>
+        <span class="test_dot test_dot5" id="test_dot5"></span>
+      </div>
+
+      </form>
+    
+    </div>  
+  
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- сносим ли мы гугл аналитикс?? -->
