@@ -1,8 +1,8 @@
 .test_subtitle {
   position: absolute;
   margin-left: 40px;
-  bottom: 30px;
-  font-family: "YS Text";
+  bottom: 73px;
+  font-family: "YS";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -15,7 +15,7 @@
   height: 46px;
   left: 423px;
   top: 56px;
-  font-family: "YS Text";
+  font-family: "YS";
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
@@ -25,7 +25,7 @@
 }
 
 .question {
-  font-family: "YS Text";
+  font-family: "YS";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -55,9 +55,9 @@
   margin: 8px 100px 8px auto;
   height: 57px;
   background: #ffffff;
-  border: 3px solid #858585;
+  border: 2px solid #858585;
   border-radius: 55px;
-  font-family: "YS Text";
+  font-family: "YS";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -73,10 +73,9 @@
   position: absolute;
   display: flex;
   flex-direction: row;
-  width: 108px;
   height: 12px;
   margin-left: 40px;
-  bottom: 30px;
+  bottom: 49px;
 }
 
 .test_dot {
@@ -84,6 +83,7 @@
   width: 12px;
   margin-right: 12px;
   background-color: $violet-tertiary;
+  background-size: cover;
   border-radius: 50%;
   display: inline-block;
 }
@@ -97,7 +97,7 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  gap: 24px;  
+  gap: 24px;
   position: absolute;
   // width: 276px;
   height: 36px;
@@ -120,7 +120,7 @@
   height: 46px;
   left: 331px;
   top: 467px;
-  font-family: 'YS';
+  font-family: "YS";
   font-style: normal;
   font-weight: 900;
   font-size: 42px;
@@ -151,6 +151,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: none;
   padding: 10px 40px;
   gap: 10px;
   position: absolute;
@@ -160,9 +161,12 @@
   top: 650px;
   background: #f5f5f5;
   border-radius: 55px;
+  font-family: "YS";
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.quiz_final_title{
+.quiz_final_title {
   position: absolute;
   width: 678px;
   height: 46px;
@@ -237,10 +241,9 @@
   background: $gray-secondary;
 }
 
-.reply_focuser{
-border: none;
-background-color: transparent;
-width: 1px;
-height: 1px;
-
+.reply_focuser {
+  border: none;
+  background-color: transparent;
+  width: 1px;
+  height: 1px;
 }
