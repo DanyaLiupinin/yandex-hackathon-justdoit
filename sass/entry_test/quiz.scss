@@ -1,7 +1,8 @@
 .test_subtitle {
   position: absolute;
   margin-left: 40px;
-  bottom: 30px;
+  bottom: 73px;
+  font-family: "YS";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -51,7 +52,7 @@
   margin: 8px 100px 8px auto;
   height: 57px;
   background: #ffffff;
-  border: 3px solid #858585;
+  border: 2px solid #858585;
   border-radius: 55px;
   font-style: normal;
   font-weight: 400;
@@ -68,10 +69,9 @@
   position: absolute;
   display: flex;
   flex-direction: row;
-  width: 108px;
   height: 12px;
   margin-left: 40px;
-  bottom: 30px;
+  bottom: 49px;
 }
 
 .test_dot {
@@ -79,6 +79,7 @@
   width: 12px;
   margin-right: 12px;
   background-color: $violet-tertiary;
+  background-size: cover;
   border-radius: 50%;
   display: inline-block;
 }
@@ -150,6 +151,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: none;
   padding: 10px 40px;
   gap: 10px;
   position: absolute;
@@ -159,16 +161,17 @@
   top: 650px;
   background: #f5f5f5;
   border-radius: 55px;
-  border: 0;
-  cursor: pointer;
+   cursor: pointer;
   transition: .2s;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .quiz_button_to_descr:hover {
   opacity: .8;
 }
 
-.quiz_final_title{
+.quiz_final_title {
   position: absolute;
   height: 46px;
   left: 221px;
@@ -240,10 +243,9 @@
   background: $gray-secondary;
 }
 
-.reply_focuser{
-border: none;
-background-color: transparent;
-width: 1px;
-height: 1px;
-
+.reply_focuser {
+  border: none;
+  background-color: transparent;
+  width: 1px;
+  height: 1px;
 }

@@ -76,11 +76,11 @@
 }
 
 .responsibilities__condition-span {
-font-size: 48px;
-font-weight: 300;
-line-height: 58px;
-color: $violet-secondary;
-margin-right: 8px;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 58px;
+  color: $violet-secondary;
+  margin-right: 8px;
 }
 
 .responsibilities__condition:nth-child(2n) {
@@ -92,6 +92,11 @@ margin-right: 8px;
 }
 
 .responsibilities__button {
+  font-family: "YS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.35;
   height: 55px;
   background-color: $black;
   color: $white;
@@ -101,9 +106,9 @@ margin-right: 8px;
   padding: 0;
   border: 0;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .responsibilities__button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
