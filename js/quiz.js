@@ -50,10 +50,12 @@ let initialize = (numb) => {
 	quiz_wrapper.innerHTML += `<button id="quiz_Question${numb}" class="question"></button>`
 	quiz_wrapper.innerHTML += `<button id="quiz_reply${numb}" class="reply"></button>`
 	quiz_wrapper.innerHTML += `<button id="quiz_reply${numb+1}" class="reply"></button>`
+  quiz_wrapper.innerHTML += `<button id="quiz_focuser${numb}" class="reply_focuser"></button>`
 
 	let quizQuestion = document.getElementById(`quiz_Question${numb}`);
 	let quizReply1 = document.getElementById(`quiz_reply${numb}`);
 	let quizReply2 = document.getElementById(`quiz_reply${numb+1}`);
+  
   quiz_wrapper.scrollTop=quiz_wrapper.scrollHeight;
 
   let repliesArray = [];
