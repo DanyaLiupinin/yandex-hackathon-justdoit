@@ -28,7 +28,7 @@
 
 .responsibilities__card-title {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 27px;
   margin-top: 36px;
 }
@@ -38,6 +38,8 @@
   font-weight: 400;
   line-height: 27px;
   margin-top: 16px;
+  margin-left: 20px;
+  text-align: start;
 }
 
 .responsibilities__card-image {
@@ -77,7 +79,7 @@
 font-size: 48px;
 font-weight: 300;
 line-height: 58px;
-color: $orange-secondary;
+color: $violet-secondary;
 margin-right: 8px;
 }
 
@@ -86,7 +88,7 @@ margin-right: 8px;
 }
 
 .responsibilities__column:first-child {
-  margin-right: 8px;
+  margin-right: 60px;
 }
 
 .responsibilities__button {
@@ -99,4 +101,9 @@ margin-right: 8px;
   padding: 0;
   border: 0;
   cursor: pointer;
+  transition: .2s;
+}
+
+.responsibilities__button:hover {
+  opacity: .8;
 }

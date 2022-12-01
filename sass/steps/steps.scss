@@ -1,59 +1,81 @@
 .steps {
   align-items: center;
+  text-align: center;
   text-align: -webkit-center;
-  padding-left: 4%;
-  padding-right: 4%;
+  max-width: 1355px;
+  background-image: url('../../images/steps-cell.svg');
+  margin: 0 auto;
+  background-color: $gray-tertiary;
+  margin-top: 160px;
+  padding-bottom: 66px;
+  position: relative;
 }
 
 .steps_title {
-  text-align: center;
-  margin-top: 160px;
-  padding-bottom: 50px;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 46px;
+  padding-top: 50px;
 }
 
-.steps_block1_title {
-  color: $violet-secondary;
-  font-size: 48px;
-  width: 100px;
-}
-
-.steps_block1_subtitle {
-  width: 150px;
-}
-
-.steps_image {
-  position: absolute;
-  z-index: 5;
-  margin-left: 60%;
-}
-
-.steps_column1 {
-  width: 100px;
-  height: auto;
-}
-
-.steps_column2 {
-  width: 100px;
-  height: auto;
-}
-
-.steps_column3 {
-  width: 100px;
-  height: 100px;
-}
-
-.steps_block1 {
+.steps__columns {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  height: 140px;
-  width: 392px;
-  align-self: center;
-  border-radius: 20px;
-  align-items: center;
-  border: 1px solid black;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
-.steps_block2 {
-  height: 70px;
+.steps__column {
+  height: 280px;
+  width: 392px;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps__block {
+  height: 140px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  background-color: $white;
+}
+
+.steps__column_center {
+  justify-content: center;
+}
+
+
+
+.steps__column_bottom {
+  justify-content: flex-end;
+}
+
+
+.steps__block-number {
+  width: 78px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 120%;
+  color: $violet-secondary;
+  margin: auto 15px auto 49px;
+}
+
+.steps__block-description {
+  height: fit-content;
+  margin: auto 0;
+  width: fit-content;
+  text-align: start;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.steps__image {
+  position: absolute;
+  top: 100px;
+  right: 360px;
 }
