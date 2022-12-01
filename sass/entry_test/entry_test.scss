@@ -1,12 +1,10 @@
 .entry-test_title {
-  margin: 68px auto;
-  width: 412px;
+  margin: 68px auto 24px;
   height: 46px;
-  font-family: "YS";
-  font-style: normal;
-  font-weight: 900;
+
   font-size: 42px;
-  line-height: 110%;
+  font-weight: 700;
+  line-height: 46px;
   text-align: center;
   color: #000000;
   flex: none;
@@ -18,7 +16,6 @@
   margin: 40px auto;
   width: 572px;
   height: 89px;
-  font-family: "YS";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -30,26 +27,24 @@
   flex-grow: 0;
 }
 
-.test_open-popup_wrapper {
-  text-align: center;
-  margin: 10px auto;
+.test_open-popup {
+  margin: 0 auto;
+  cursor: pointer;
+  display: block;
   border-radius: 55px;
   background-color: black;
-  width: 155px;
-  padding: 10px;
-}
-
-.test_open-popup {
-  color: white;
-  font-family: "YS";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.35;
+  line-height: 135%;
+  color: $white;
+  min-width: 174px;
+  min-height: 42px;
+  transition: .2s;
 }
 
-.test_open-popup_wrapper:hover {
-  opacity: 0.9;
+.test_open-popup:hover {
+  opacity: 0.8;
 }
 
 /* Важная часть */
@@ -92,6 +87,7 @@
   transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
   transition: 0.5s all;
 }
+
 /* Конец важной части */
 /* Далее код для стилизации формы */
 .test_close-popup {

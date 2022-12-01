@@ -11,11 +11,9 @@
 
 .test_title {
   margin: 40px auto 38px;
-  width: 275px;
   height: 46px;
   left: 423px;
   top: 56px;
-  font-family: "YS";
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
@@ -25,7 +23,6 @@
 }
 
 .question {
-  font-family: "YS";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -57,7 +54,6 @@
   background: #ffffff;
   border: 2px solid #858585;
   border-radius: 55px;
-  font-family: "YS";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -116,13 +112,11 @@
 
 .load_title {
   position: absolute;
-  width: 458px;
   height: 46px;
   left: 331px;
   top: 467px;
-  font-family: "YS";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 42px;
   line-height: 110%;
   text-align: center;
@@ -144,6 +138,12 @@
   color: white;
   background: #000000;
   border-radius: 55px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.quiz_button_to_vac:hover {
+  opacity: .8;
 }
 
 .quiz_button_to_descr {
@@ -161,20 +161,23 @@
   top: 650px;
   background: #f5f5f5;
   border-radius: 55px;
-  font-family: "YS";
+   cursor: pointer;
+  transition: .2s;
   font-size: 16px;
   font-weight: 600;
 }
 
+.quiz_button_to_descr:hover {
+  opacity: .8;
+}
+
 .quiz_final_title {
   position: absolute;
-  width: 678px;
   height: 46px;
   left: 221px;
   top: 60px;
-  font-family: "YS";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 42px;
   line-height: 110%;
   text-align: center;
@@ -205,7 +208,6 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  font-family: "YS";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

@@ -76,17 +76,7 @@ let initialize = (numb) => {
     repliesArray.push(result[0].options[0]);
     if (numb < 9) initialize(numb + 2, numb + 3);
     else sendToServer(repliesArray);
-  });
-  quizReply2.addEventListener("click", (e) => {
-    e.preventDefault();
-    quizReply1.classList.add("hidden");
-    quizReply2.style.backgroundColor = "#FEF9D8";
-    quizReply2.style.border = "none";
-    repliesArray.push(result[0].options[1]);
-    if (numb < 9) initialize(numb + 2, numb + 3);
-    else sendToServer(repliesArray);
-  });
-};
+	})
 
 initialize(1);
 var timer = null;
@@ -131,7 +121,7 @@ const loading = (loading) => {
 
 const showResult = () => {
   test_popup.innerHTML = `
-  <h2 class="title is-2 quiz_final_title">Тебе бы подошла роль ревьюера!</h2>
+  <h2 class="title quiz_final_title">Тебе бы подошла роль ревьюера!</h2>
 
   <div class="columns quiz_block">
   <div class="column">
@@ -147,7 +137,7 @@ const showResult = () => {
 </div>
   </div>
 
-  <button href="#" class="quiz_button_to_vac" id="quiz_button_to_vac">Открыть список вакансий</button>
+  <button href="#" class="quiz_button_to_vac" id="quiz_button_to_vac">Хочу стать наставником</button>
   <button href="#" class="quiz_button_to_descr" id="quiz_button_to_descr">Вернуться к описанию профессий</button>
   `;
   let button_vac = document.getElementById("quiz_button_to_vac");
