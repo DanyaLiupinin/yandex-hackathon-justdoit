@@ -1,3 +1,5 @@
+import girl_image from '../images/Pic_girl.svg';
+
 let numb = 1;
 
 let test_popup = document.getElementById("test_popup");
@@ -138,7 +140,7 @@ const showResult = () => {
     Оценивает работы — зачёт/незачёт.</p>
   </div>
   <div class="column">
-  <img class="quiz_pic" src="<%=require('./images/Pic_girl.svg')%>" alt="#">
+  <img class="quiz_pic" src=${girl_image} alt="#">
   </div>
 </div>
   </div>
