@@ -1,69 +1,126 @@
 .professions {
-  height: 360px;
+  min-height: 439px;
   margin-top: 160px;
 }
 
 .professions_left {
   border-right: 1px solid $gray-secondary;
   background-color: white;
-  border-top-left-radius: 150px;
+
+  max-width: 720px;
+  min-height: 439px;
+  padding: 0;
+  position: relative;
+  border-radius: 100px 0px 0px 0px;
 }
 
 .professions_right {
   background-color: white;
-  border-top-right-radius: 150px;
+  border-radius: 0px 100px 0px 0px;
+  max-width: 720px;
+  min-height: 439px;
+  position: relative;
+  padding: 0;
 }
 
-.professions_dot {
-  height: 15px;
-  width: 15px;
-  background-color: $orange-secondary;
-  border-radius: 50%;
+.professions__dot {
+  background: url('../../images/dot.svg') no-repeat;
+
+  width: 16px;
+  height: 25px;
   display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  object-fit: contain;
+}
+
+.professions__item {
+  text-align: end;
+  position: relative;
+  text-align: start;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+
+
+}
+
+.professions__item:not(:first-child) {
+  margin-top: 10px;
 }
 
 .professions_title_left {
-  margin-right: 400px;
-  text-align: end;
-  padding-bottom: 10px;
+  margin: 48px auto 0 100px;
+  margin-bottom: 0;
+  width: fit-content;
 }
 
 .professions_title_right {
-  margin-left: 170px;
-  text-align: left;
-  padding-bottom: 10px;
+  margin-top: 48px;
+  margin-left: 206px;
+  width: fit-content;
 }
 
 .professions_col_left {
-  justify-content: end;
+  border: 0;
+  width: fit-content;
+  margin-left: 122px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .professions_col_right {
-  justify-content: left;
-  max-width: 80%;
+  border: 0;
+  width: fit-content;
+  margin-left: 267px;
+  margin-top: 5px;
 }
 
 .professions_image_left {
   max-width: 180px;
-  margin-right: 20px;
-  margin-left: 60px;
+  margin-right: 32px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .professions_image_right {
   max-width: 207px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   margin-left: 20px;
-  margin-right: 20px;
 }
 
 .professions_link {
-  color: $violet-secondary;
+  color: $black;
   border: none;
-  background-color: transparent;
+  background-color: $gray-tertiary;
   width: 290px;
   height: 30px;
+  border-radius: 55px;
+  min-height: 40px;
+  cursor: pointer;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .professions_link:hover {
-  background-color: $gray-secondary;
-  border-radius: 30px;
+  opacity: .8;
+}
+
+.professions__button {
+  margin-top: 42px;
+  position: relative;
+}
+
+
+
+.professions__button:last-child {
+  right: 30px;
 }

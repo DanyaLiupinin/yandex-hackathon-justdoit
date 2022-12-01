@@ -1,217 +1,381 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Place favicon.ico in the root directory -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-    <!--     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/mystyles.css" /> -->
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Place favicon.ico in the root directory -->
 
-    <meta name="theme-color" content="#fafafa" />
-  </head>
-  <body>
-    <header name="header" class="header">
-      <div class="header__wrapper">
-        <nav class="header__navigation navbar">
-          <div class="navbar-start">
-            <a class="navbar-start__item navbar-item">О нас</a>
-            <a class="navbar-start__item navbar-item">Вакансии</a>
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+  <header name="header" class="header">
+    <div class="header__wrapper">
+      <nav class="header__navigation navbar">
+        <div class="navbar-start">
+          <a class="navbar-start__item">О нас</a>
+          <a class="navbar-start__item">Вакансии</a>
+        </div>
+        <img src="<%=require('./images/logo-yandex.svg')%>" alt="логотип Яндекса" class="header__logo navbar-item" />
+        <div class="navbar-end">
+          <a class="navbar-end__item">О нас</a>
+          <a class="navbar-end__item">Вакансии</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section name="intro" class="intro">
+      <div class="intro__content">
+        <img class="intro__girl" src="<%=require('./images/intro-girl.svg')%>" alt="рисунок девушки с ноутбуком" />
+        <img class="intro__lamp" src="<%=require('./images/intro-lamp.svg')%>" alt="рисунок лампочки" />
+        <h1 class="intro__title">
+          Работа — <br />
+          <div class="intro__title-change-block">
+            <span class="intro__title-change">вдохновлять!</span>
           </div>
-          <img
-            src="<%=require('./images/logo-yandex.svg')%>"
-            alt="логотип Яндекса"
-            class="header__logo navbar-item"
-          />
-          <div class="navbar-end">
-            <a class="navbar-end__item navbar-item">О нас</a>
-            <a class="navbar-end__item navbar-item">Вакансии</a>
-          </div>
-        </nav>
+        </h1>
+        <p class="intro__subtitle">
+          Меняем
+          <span class="intro__subtitle-marked_violet"> знания и опыт</span><br />
+          <span class="intro__subtitle-marked_yellow">на деньги</span>
+        </p>
+        <p class="intro__description">
+          Делитесь своим опытом в программировании, анализе <br />
+          данных, менеджменте, маркетинге или дизайне и получайте <br />
+          дополнительный доход.
+        </p>
+        <button class="button intro__button is-black">
+          Хочу поделиться знаниями
+        </button>
       </div>
-    </header>
-    <main class="main">
-      <section name="intro" class="intro">
-        <div class="intro__content">
-          <img
-            class="intro__girl"
-            src="<%=require('./images/intro-girl.svg')%>"
-            alt="рисунок девушки с ноутбуком"
-          />
-          <img
-            class="intro__lamp"
-            src="<%=require('./images/intro-lamp.svg')%>"
-            alt="рисунок лампочки"
-          />
-          <h1 class="intro__title">
-            Работа — <br />
-            <div class="intro__title-change-block">
-              <span class="intro__title-change">вдохновлять!</span>
-            </div>
-          </h1>
-          <p class="intro__subtitle">
-            Меняем
-            <span class="intro__subtitle-marked_violet"> знания и опыт</span
-            ><br />
-            <span class="intro__subtitle-marked_yellow">на деньги</span>
-          </p>
-          <p class="intro__description">
-            Делитесь своим опытом в программировании, анализе <br />
-            данных, менеджменте, маркетинге или дизайне и получайте <br />
-            дополнительный доход.
-          </p>
-          <button class="button intro__button is-black">
-            Хочу поделиться знаниями
-          </button>
-        </div>
-      </section>
+    </section>
 
-      <section name="professions" class="professions">
-        <div class="columns is-centered">
-          <div class="column is-half professions_left">
-            <h2 class="title is-2 professions_title_left">Ревьюер</h2>
-            <div class="columns professions_col_left">
-              <ul>
-                <li>
-                  <span class="professions_dot"></span> Проверяет код и проекты
-                  студентов
-                </li>
-                <li>
-                  <span class="professions_dot"></span> Простыми словами
-                  объясняет им их ошибки
-                </li>
-                <li>
-                  <span class="professions_dot"></span> Даёт корректирующую
-                  обратную связь
-                </li>
-                <li>
-                  <span class="professions_dot"></span> Оценивает работы —
-                  зачёт/незачёт
-                </li>
-                <!--  <li><button href=# class="professions_link"> Показать вакансии ревьюера &#8594</button></li> -->
-              </ul>
-              <figure class="image">
-                <img
-                  class="professions_image_left"
-                  src="<%=require('./images/Pic_girl.svg')%>"
-                />
-              </figure>
+    <section name="professions" class="professions">
+      <div class="columns is-centered">
+        <div class="column is-half professions_left">
+          <figure class="image">
+            <img class="professions_image_left" src="<%=require('./images/professions-image-left.svg')%>">
+          </figure>
+          <h2 class="title is-2 professions_title_left">Ревьюер</h2>
+          <div class="columns professions_col_left">
+            <ul type="circle">
+              <li class="professions__item"><span class="professions__dot"></span>Проверяет код и проекты студентов</li>
+              <li class="professions__item"><span class="professions__dot"></span>Простыми словами объясняет <br> им их
+                ошибки</li>
+              <li class="professions__item"><span class="professions__dot"></span>Даёт корректирующую обратную <br>
+                связь</li>
+              <li class="professions__item"><span class="professions__dot"></span>Оценивает работы — зачёт/незачёт</li>
+              <li class="professions__button"><button href=# class="professions_link"> Хочу стать ревьюером</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="column professions_right">
+          <figure class="image">
+            <img class="professions_image_right" src="<%=require('./images/professions-image-right.svg')%>">
+          </figure>
+          <h2 class="title is-2 professions_title_right">Наставник</h2>
+          <div class="columns professions_col_right">
+            <ul class="professions__ul">
+              <li class="professions__item"> <span class="professions__dot"></span> Помогает студентам ставить цели,
+                <br> рефлексировать и делать выводы</li>
+              <li class="professions__item"> <span class="professions__dot"></span>Отвечает на их вопросы в чате</li>
+              <li class="professions__item"><span class="professions__dot"></span>Проводит вебинары 2 раза в месяц <br>
+                и даёт обратную связь</li>
+              <li class="professions__item"><span class="professions__dot"></span>Делится опытом и мотивирует
+              <li class="professions__button"><button href=# class="professions_link">Хочу стать наставником</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <section name="entry-test"></section>
+
+    <section name="steps" class="steps">
+      <h2 class="steps_title">
+        Стать экспертом Яндекса просто, как
+      </h2>
+      <img src="<%=require('./images/Pic_airplane.svg')%>" class="steps__image" />
+      <div class="steps__columns">
+
+        <div class="steps__column steps__column_top">
+          <div class="steps__block">
+            <div class="steps__block-number">
+              <p>раз</p>
             </div>
+            <div class="steps__block-description">
+              <p>Выберите роль и заполните заявку</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps__column steps__column_center">
+          <div class="steps__block">
+            <div class="steps__block-number">
+              <p>два</p>
+            </div>
+            <div class="steps__block-description">
+              <p>Пройдите отбор <br> и бесплатное <br> обучение</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps__column steps__column_bottom">
+          <div class="steps__block">
+            <div class="steps__block-number">
+              <p>три</p>
+            </div>
+            <div class="steps__block-description">
+              <p>Начните делиться <br> знаниями <br> со студентами <br> Яндекс Практикума</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--
+      <h2 class="title is-2 steps_title">
+        Стать экспертом Яндекса просто, как
+      </h2>
+      <img src="<%=require('./images/Pic_airplane.svg')%>" class="steps_image" />
+      <div class="tile is-ancestor steps">
+        <div class="tile is-4 steps_column1">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-warning">
+              <div class="steps_block1">
+                <p class="steps_block1_title">раз</p>
+                <p class="steps_block1_subtitle">
+                  Выберите роль и заполните заявку
+                </p>
+              </div>
+            </article>
+            <article class="tile is-child">
+              <div class="steps_block2"></div>
+            </article>
+            <article class="tile is-child">
+              <div class="steps_block2"></div>
+            </article>
+          </div>
+        </div>
+        <div class="tile steps_column2">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child">
+              <div class="steps_block2"></div>
+            </article>
+            <article class="tile is-child notification is-warning">
+              <div class="steps_block1">
+                <p class="steps_block1_title">два</p>
+                <p class="steps_block1_subtitle">
+                  Пройдите отбор и бесплатное обучение
+                </p>
+              </div>
+            </article>
+            <article class="tile is-child">
+              <div class="steps_block2"></div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="tile steps_column3">
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child notification is-primary">
+            <div class="steps_block2"></div>
+          </article>
+          <article class="tile is-child notification is-warning">
+            <div class="steps_block2"></div>
+          </article>
+          <article class="tile is-child notification is-warning">
+            <div class="steps_block1">
+              <p class="steps_block1_title">три</p>
+              <p class="steps_block1_subtitle">Начните делиться знаниями со студентами Яндекс Практикума</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      </div>
+      -->
+    </section>
+
+    <section name="areas" class="areas">
+      <h2 class="areas__title">Мы предлагаем работу</h2>
+      <p class="areas__subtitle">Выбери свою экспертную область</p>
+      <div class="areas__cards">
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">16 <br> вакансий</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Анализ данных</h3>
+              <p class="areas__vacancy-description">SQL, аналитика, Data Science <br> и архитектура данных</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый задумчивый факультет</h3>
+          </div>
+        </div>
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">11 <br> вакансий</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Дизайн</h3>
+              <p class="areas__vacancy-description">Графический, коммуникационный, для интерфейсов и продуктов</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый креативный факультет</h3>
+          </div>
+        </div>
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">26 <br> вакансий</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Программирование</h3>
+              <p class="areas__vacancy-description">Тестирование, фронтенд, бэкенд, DevOps <br> и алгоритмы</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый последовательный <br> факультет</h3>
+          </div>
+        </div>
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">12 <br> вакансий</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Менеджмент</h3>
+              <p class="areas__vacancy-description">Управление проектами, командами <br> и IT - рекрутмент</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый эффективный факультет</h3>
+          </div>
+        </div>
+
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">2 <br> вакансии</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Маркетинг</h3>
+              <p class="areas__vacancy-description">Интернет — маркетинг и управление <br> трафиком</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый успешный факультет</h3>
+          </div>
+        </div>
+        <div class="areas__card">
+          <div class="areas__card-front">
+            <div class="areas__vaсancy">
+              <p class="areas__vacancy-amount">4 <br> вакансии</p>
+            </div>
+            <div class="areas__vacancy-information">
+              <h3 class="areas__vacancy-title">Английский язык</h3>
+              <p class="areas__vacancy-description">Для работы и жизни</p>
+            </div>
+          </div>
+          <div class="areas__card-back">
+            <h3 class="areas__card-caption">Самый болтливый факультет</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section name="responsibilities" class="responsibilities">
+      <h2 class="responsibilities__title">В роли наставника и ревьюера ты будешь</h2>
+      <div class="responsibilities__cards">
+
+        <div class="responsibilities__card">
+          <p class="responsibilities__card-title">Менять жизнь людей</p>
+          <img class="responsibilities__card-image" src="<%=require('./images/respons-image1.svg')%>" alt="#">
+          <p class="responsibilities__card-description">Тысячи наших студентов нуждаются в ваших <br> знаниях и опыте —
+            не бойтесь ими делиться</p>
+        </div>
+
+        <div class="responsibilities__card">
+          <p class="responsibilities__card-title">Учить новому</p>
+          <img class="responsibilities__card-image" src="<%=require('./images/respons-image2.svg')%>" alt="#">
+          <p class="responsibilities__card-description">Узнаете, как давать <br> обратную связь, <br> выступать
+            на публике и мотивировать людей</p>
+        </div>
+
+        <div class="responsibilities__card">
+          <p class="responsibilities__card-title">Общаться с EdTech</p>
+          <img class="responsibilities__card-image" src="<%=require('./images/respons-image3.svg')%>" alt="#">
+          <p class="responsibilities__card-description">Станете частью <br> сообщества экспертов и посмотрите <br>
+            на мир онлайн - <br> образования изнутри</p>
+        </div>
+
+        <div class="responsibilities__card">
+          <p class="responsibilities__card-title">Развивать свой бренд</p>
+          <img class="responsibilities__card-image" src="<%=require('./images/respons-image4.svg')%>" alt="#">
+          <p class="responsibilities__card-description">Публикуйтесь в нашем <br> блоге и выступайте на мероприятиях,
+            <br> заявите о себе как об эксперте
+          </p>
+        </div>
+      </div>
+      <div class="responsibilities__conditions">
+        <div class="responsibilities__conditions-list">
+
+          <div class="responsibilities__column">
+            <p class="responsibilities__condition">
+              <span class="responsibilities__condition-span">35–55</span>
+              тысяч рублей — твой доход
+            </p>
+
+            <p class="responsibilities__condition">
+              <span class="responsibilities__condition-span">2–3</span>
+              часа в день занимает проект
+            </p>
           </div>
 
-          <div class="column professions_right">
-            <h2 class="title is-2 professions_title_right">Наставник</h2>
-            <div class="columns professions_col_right">
-              <figure class="image">
-                <img
-                  class="professions_image_right"
-                  src="<%=require('./images/Pic_boy.svg')%>"
-                />
-              </figure>
-              <ul>
-                <li>
-                  <span class="professions_dot"></span> Помогает студентам
-                  ставить цели, рефлексировать и делать выводы
-                </li>
-                <li>
-                  <span class="professions_dot"></span> Отвечает на их вопросы
-                  в чате
-                </li>
-                <li>
-                  <span class="professions_dot"></span> Проводит вебинары 2 раза
-                  в месяц и даёт обратную связь
-                </li>
-                <li>
-                  <span class="professions_dot"></span> Делится опытом
-                  и мотивирует
-                </li>
-                <!--             <li><button href=# class="professions_link">Показать вакансии наставника &#8594</button></li> -->
-              </ul>
-            </div>
+          <div class="responsibilities__column">
+            <p class="responsibilities__condition">
+              <span class="responsibilities__condition-span">FREE</span>
+              график выбираешь сам
+            </p>
+
+            <p class="responsibilities__condition">
+              <span class="responsibilities__condition-span">≈ 50</span>
+              человек в группе учеников
+            </p>
           </div>
+
+
+
         </div>
-      </section>
-      <section name="entry-test"></section>
-      <section name="steps">
-        <h2 class="title is-2 steps_title">
-          Стать экспертом Яндекса просто, как
-        </h2>
-        <img
-          src="<%=require('./images/Pic_airplane.svg')%>"
-          class="steps_image"
-        />
-        <div class="tile is-ancestor steps">
-          <div class="tile is-4 steps_column1">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child notification is-warning">
-                <div class="steps_block1">
-                  <p class="steps_block1_title">раз</p>
-                  <p class="steps_block1_subtitle">
-                    Выберите роль и заполните заявку
-                  </p>
-                </div>
-              </article>
-              <article class="tile is-child">
-                <div class="steps_block2"></div>
-              </article>
-              <article class="tile is-child">
-                <div class="steps_block2"></div>
-              </article>
-            </div>
-          </div>
-          <div class="tile steps_column2">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child">
-                <div class="steps_block2"></div>
-              </article>
-              <article class="tile is-child notification is-warning">
-                <div class="steps_block1">
-                  <p class="steps_block1_title">два</p>
-                  <p class="steps_block1_subtitle">
-                    Пройдите отбор и бесплатное обучение
-                  </p>
-                </div>
-              </article>
-              <article class="tile is-child">
-                <div class="steps_block2"></div>
-              </article>
-            </div>
-          </div>
-          <div class="tile steps_column3">
-            <div class="tile is-parent is-vertical">
-              <article class="tile is-child notification is-primary">
-                <div class="steps_block2"></div>
-              </article>
-              <article class="tile is-child notification is-warning">
-                <div class="steps_block2"></div>
-              </article>
-              <article class="tile is-child notification is-warning">
-                <div class="steps_block1">
-                  <p class="steps_block1_title">три</p>
-                  <p class="steps_block1_subtitle">
-                    Начните делиться знаниями со студентами Яндекс Практикума
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section name="areas"></section>
-      <section name="responsibilities"></section>
-      <section name="vacancies"></section>
-      <section name="reviews" class="reviews">
+        <button type="button" class="responsibilities__button">Хочу стать экспертом</button>
+      </div>
+
+    </section>
+
+    <section name="vacancies"></section>
+         <section name="reviews" class="reviews">
         <h2 class="reviews__title">Жизнь внутри нашей команды</h2>
         <p class="reviews__subtitle reviews__subtitle_num_1">
           Часть команды — часть корабля.
@@ -287,197 +451,177 @@
           </li>
         </ul>
       </section>
-      <section name="values" class="values">
-        <h2 class="values__title">Наши ценности</h2>
-        <div class="values__container">
-          <ul class="values__values">
-            <li class="values__value">
-              <h4 class="values__header">Ответственность</h4>
-              <p class="values__text">
-                Мы доверям своим сотрудникам и верим, что они делают правильные
-                вещи во имя общего дела
-              </p>
-            </li>
-            <li class="values__value">
-              <h4 class="values__header">Прозрачность</h4>
-              <p class="values__text">
-                Мы доверям своим сотрудникам и верим, что они делают правильные
-                вещи во имя общего дела
-              </p>
-            </li>
-            <li class="values__value">
-              <h4 class="values__header">Дружелюбие</h4>
-              <p class="values__text">
-                Мы доверям своим сотрудникам и верим, что они делают правильные
-                вещи во имя общего дела
-              </p>
-            </li>
-          </ul>
-
-          <img
-            class="values__image"
-            src="<%=require('./images/values-img.svg')%>"
-          />
-        </div>
-      </section>
-      <section name="contacts"></section>
-      <section name="faq"></section>
-    </main>
-    <footer name="footer" class="footer">
-      <ul class="footer__contacts">
-        <li class="footer__logo">
-          <img
-            class="'footer__logo-img"
-            src="<%=require('./images/praktikum-logo.svg')%>"
-            alt="Логотип Яндекс Практикума"
-          />
-        </li>
-        <li class="footer__nav-item">
-          <a
-            class="footer__nav-link footer__link"
-            target="_blank"
-            href="http://praktikum.yandex.ru/job"
-            >Вакансии</a
-          >
-        </li>
-        <li class="footer__nav-item">
-          <a
-            class="footer__nav-link footer__link"
-            target="_blank"
-            href="https://code.s3.yandex.net/License%20YSDA.pdf"
-            >Лицензия</a
-          >
-        </li>
-        <li class="footer__nav-item">
-          <a
-            class="footer__nav-link footer__link"
-            target="_blank"
-            href="https://yandex.ru/legal/praktikum_termsofuse/"
-            >Правовая информация</a
-          >
-        </li>
-        <li class="footer__nav-item">
-          <a
-            class="footer__nav-link footer__link"
-            target="_blank"
-            href="https://praktikum.yandex.ru/employment"
-            >Для работодателей</a
-          >
-        </li>
-        <li class="footer__nav-item">
-          <a
-            class="footer__nav-link footer__link"
-            target="_blank"
-            href="https://praktikum.yandex.ru/reviews/"
-            >Отзывы</a
-          >
-        </li>
-      </ul>
-      <nav>
-        <ul class="footer__nav-bar">
-          <li class="footer__nav-item">
-            <a
-              class="footer__nav-link footer__link"
-              target="_blank"
-              href="https://yandex.ru/support/praktikum/feedback.html"
-              >Помощь</a
-            >
+    <section name="values" class="values">
+      <h2 class="values__title">Наши ценности</h2>
+      <div class="values__container">
+        <ul class="values__values">
+          <li class="values__value">
+            <h4 class="values__header">Ответственность</h4>
+            <p class="values__text">
+              Мы доверям своим сотрудникам и верим, что они делают правильные
+              вещи во имя общего дела
+            </p>
           </li>
-          <li class="footer__nav-item">
-            <a
-              class="footer__nav-link footer__link"
-              target="_blank"
-              href="http://praktikum.yandex.ru/job"
-              >Вакансии</a
-            >
+          <li class="values__value">
+            <h4 class="values__header">Прозрачность</h4>
+            <p class="values__text">
+              Мы доверям своим сотрудникам и верим, что они делают правильные
+              вещи во имя общего дела
+            </p>
           </li>
-          <li class="footer__nav-item">
-            <a
-              class="footer__nav-link footer__link"
-              target="_blank"
-              href="https://code.s3.yandex.net/License%20YSDA.pdf"
-              >Лицензия</a
-            >
-          </li>
-          <li class="footer__nav-item">
-            <a
-              class="footer__nav-link footer__link"
-              target="_blank"
-              href="https://yandex.ru/legal/praktikum_termsofuse/"
-              >Правовая информация</a
-            >
-          </li>
-          <li class="footer__nav-item">
-            <a
-              class="footer__nav-link footer__link"
-              target="_blank"
-              href="https://praktikum.yandex.ru/employment"
-              >Для работодателей</a
-            >
-          </li>
-          <li class="footer__nav-item">
-            <a
-              class="footer__nav-link footer__link"
-              target="_blank"
-              href="https://praktikum.yandex.ru/reviews/"
-              >Отзывы</a
-            >
+          <li class="values__value">
+            <h4 class="values__header">Дружелюбие</h4>
+            <p class="values__text">
+              Мы доверям своим сотрудникам и верим, что они делают правильные
+              вещи во имя общего дела
+            </p>
           </li>
         </ul>
-      </nav>
-      <ul class="footer__info">
-        <li>
-          <p class="footer__paragraph">
-            Информация на данной странице описывает возможные варианты получения
-            дополнительного дохода в месяц (т.н. подработка). Не является
-            предложением о работе. Размещенные объявления о потребности в тех
-            или иных услугах не являются вакансиями.
-          </p>
+
+        <img class="values__image" src="<%=require('./images/values-img.svg')%>" />
+      </div>
+    </section>
+    <section name="contacts" class="contacts">
+      <a href="#" class="open-popup">
+        <div class="js-modal-trigger contacts_col contacts_col_left" data-target="modal-js-example">
+          <img src="<%=require('./images/Pic_rocket.svg')%>" class="contacts_image_rocket">
+          <p class="bd-notification is-primary contacts_subtitle">Не нашёл подходящей вакансии?</p>
+          <h2 class=" title is-2 contacts_title">Расскажи нам</h2>
+          <p class="bd-notification is-primary contacts_subtitle">о себе и своём опыте</p>
+        </div>
+      </a>
+      <a href="https://thecode.media/" target="_blank">
+        <div class="contacts_col contacts_col_right">
+          <img src="<%=require('./images/Group 33.svg')%>" class="contacts_image_group">
+          <img src="<%=require('./images/Pic_airplane.svg')%>" class="contacts_image_plane">
+          <p class="bd-notification is-primary contacts_subtitle">Хочешь узнать больше о Яндекс.Практикуме?</p>
+          <h2 class=" title is-2 contacts_title">Загляни в наш блог</h2>
+          <p class="bd-notification is-primary contacts_subtitle">и познакомься с жизнью внутри комьюнити</p>
+        </div>
+      </a>
+    </section>
+    <section name="faq"></section>
+  </main>
+  <footer name="footer" class="footer">
+    <ul class="footer__contacts">
+      <li class="footer__logo">
+        <img class="'footer__logo-img" src="<%=require('./images/praktikum-logo.svg')%>"
+          alt="Логотип Яндекс Практикума" />
+      </li>
+      <li class="footer__call">
+        <p class="footer__phone-number">8 800 700-93-29</p>
+        <p class="footer__free-call">Звонок по России бесплатный</p>
+      </li>
+      <li class="footer__social-links">
+        <a class="footer__vk-link footer__link" target="_blank" src="https://vk.com/yandex.practicum">
+        </a>
+        <a class="footer__telegram-link footer__link" target="_blank" src="#">
+        </a>
+        <a class="footer__journal-link footer__link" src="https://thecode.media/" target="_blank">Журнал
+        </a>
+      </li>
+      <li class="footer__copyright">
+        <p class="footer__copyright-text">
+          &copy; 2022 АНО ДПО «ШАД», ООО «Яндекс»
+        </p>
+      </li>
+    </ul>
+    <nav>
+      <ul class="footer__nav-bar">
+        <li class="footer__nav-item">
+          <a class="footer__nav-link footer__link" target="_blank"
+            href="https://yandex.ru/support/praktikum/feedback.html">Помощь</a>
         </li>
-        <li>
-          <p class="footer__paragraph">
-            Образовательные услуги оказываются АНО ДПО «ШАД». ШАД — это
-            <a
-              class="footer__info-link footer__link"
-              target="_blank"
-              href="https://academy.yandex.ru/dataschool/"
-              >Школа анализа данных</a
-            >, основанная Яндексом и оказывающая образовательные услуги на
-            основании
-            <a
-              class="footer__info-link footer__link"
-              target="_blank"
-              href="https://code.s3.yandex.net/License%20YSDA.pdf"
-              >Лицензии № 036031</a
-            >
-            от 24 марта 2015 года.
-          </p>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link footer__link" target="_blank" href="http://praktikum.yandex.ru/job">Вакансии</a>
         </li>
-        <li>
-          <p class="footer__paragraph">
-            Сертификат о прохождении обучения по программе дополнительного
-            профессионального образования также выдается АНО ДПО «ШАД».
-          </p>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link footer__link" target="_blank"
+            href="https://code.s3.yandex.net/License%20YSDA.pdf">Лицензия</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link footer__link" target="_blank"
+            href="https://yandex.ru/legal/praktikum_termsofuse/">Правовая информация</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link footer__link" target="_blank"
+            href="https://praktikum.yandex.ru/employment">Для работодателей</a>
+        </li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-link footer__link" target="_blank"
+            href="https://praktikum.yandex.ru/reviews/">Отзывы</a>
         </li>
       </ul>
-    </footer>
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <!--     <script src="js/main.js" type="module"></script>
-    <script src="js/modules/reviews.js" type="module"></script> -->
+    </nav>
+    <ul class="footer__info">
+      <li>
+        <p class="footer__paragraph">
+          Информация на данной странице описывает возможные варианты получения
+          дополнительного дохода в месяц (т.н. подработка). Не является
+          предложением о работе. Размещенные объявления о потребности в тех
+          или иных услугах не являются вакансиями.
+        </p>
+      </li>
+      <li>
+        <p class="footer__paragraph">
+          Образовательные услуги оказываются АНО ДПО «ШАД». ШАД — это
+          <a class="footer__info-link footer__link" target="_blank" href="https://academy.yandex.ru/dataschool/">Школа
+            анализа данных</a>, основанная Яндексом и оказывающая образовательные услуги на
+          основании
+          <a class="footer__info-link footer__link" target="_blank"
+            href="https://code.s3.yandex.net/License%20YSDA.pdf">Лицензии № 036031</a>
+          от 24 марта 2015 года.
+        </p>
+      </li>
+      <li>
+        <p class="footer__paragraph">
+          Сертификат о прохождении обучения по программе дополнительного
+          профессионального образования также выдается АНО ДПО «ШАД».
+        </p>
+      </li>
+    </ul>
+  </footer>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js" type="module"></script>
+  <div class="popup__bg">
+    <form class="popup">
+      <img src="images/close.svg" class="close-popup">
+      <label>
+        <input type="text" name="name">
+        <div class="label__text">
+          Ваше имя
+        </div>
+      </label>
+      <label>
+        <input type="tel" name="tel">
+        <div class="label__text">
+          Ваш телефон
+        </div>
+      </label>
+      <label>
+        <textarea name="message"></textarea>
+        <div class="label__text">
+          Ваше сообщение
+        </div>
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <!-- сносим ли мы гугл аналитикс?? -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-  </body>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- сносим ли мы гугл аналитикс?? -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments);
+    };
+    ga.q = [];
+    ga.l = +new Date();
+    ga("create", "UA-XXXXX-Y", "auto");
+    ga("set", "anonymizeIp", true);
+    ga("set", "transport", "beacon");
+    ga("send", "pageview");
+  </script>
+</body>
+
 </html>
