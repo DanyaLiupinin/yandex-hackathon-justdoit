@@ -2,6 +2,8 @@
 
 // Import a Google Font
 @import url("../fonts/fonts.css");
+@import url("../css/normalize.css");
+@import url("../css/main.css");
 
 // Set your brand colors
 
@@ -37,22 +39,22 @@ $purple: $black;
 $pink: $black;
 $beige-lighter: white;
 
-$brown:$black;
-$beige-light:$black;
-$purple:$black;
-$pink:$black;
+$brown: $black;
+$beige-light: $black;
+$purple: $black;
+$pink: $black;
 $beige-lighter: white;
 
-$brown:$black;
-$beige-light:$black;
-$purple:$black;
-$pink:$black;
+$brown: $black;
+$beige-light: $black;
+$purple: $black;
+$pink: $black;
 $beige-lighter: white;
 
-$brown:$black;
-$beige-light:$black;
-$purple:$black;
-$pink:$black;
+$brown: $black;
+$beige-light: $black;
+$purple: $black;
+$pink: $black;
 $beige-lighter: white;
 
 $brown:$black;
@@ -112,6 +114,9 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/grid/columns.sass";
 @import "./professions/professions.scss";
 @import "./main/main.scss";
+
+// values
+@import "./values/values.scss";
 //steps
 @import "../node_modules/bulma/sass/grid/tiles.sass";
 // areas
@@ -122,4 +127,6 @@ $input-shadow: none;
 @import "./contacts/contacts.scss";
 // footer
 @import "./footer/footer.scss";
-
+/* // reviews
+@import "./reviews/reviews.scss";
+@import "./reviews/vanilla-js-carousel.scss"; */
