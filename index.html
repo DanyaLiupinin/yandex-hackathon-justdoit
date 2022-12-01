@@ -164,8 +164,8 @@
       <h2 class="entry-test_title title is-2">На чьей стороне ты?</h2>
       <p class="entry-test_text">Не знаешь с чего начать и какая роль подойдёт лучше?</br>
         Пройди быстрый тест, и мы подберём работу, подходящую</br> именно тебе.</p>
-        <div class="test_open-popup_wrapper">
-      <a href="#" class="test_open-popup">Открыть попап</a>
+      <div class="test_open-popup_wrapper">
+        <a href="#" class="test_open-popup">Открыть попап</a>
       </div>
     </section>
 
@@ -336,7 +336,110 @@
 
     </section>
 
-    <section name="vacancies" id="vacancies"></section>
+    <section name="vacancies" class="vacancies" id="vacancies">
+      <h1 class="vacancies__title">Наши предложения</h1>
+      <!--
+      <div class="vacancies__filters">
+        <button type="button" class="vacancies__filter-block">
+          <p class="vacancies__filter">Все роли</p>
+        </button>
+        <button type="button" class="vacancies__filter-block">
+          <p class="vacancies__filter">Для наставников</p>
+        </button>
+        <button type="button" class="vacancies__filter-block">
+          <p class="vacancies__filter">Для ревьюеров</p>
+        </button>
+      </div>
+      -->
+      <div class="vacancies__cards">
+        <div class="vacancies__card">
+          <a class="vacancies__card-click" target="_blank">
+            <p class="vacancies__card-title">Наставник на курс <br>
+              «Мидл-фронтед-разработчик»</p>
+            <img class="vacancies__card-info" src="<%=require('./images/vacancies-info.svg')%>">
+            <p class="vacancies__card-price">≈ 35 000 ₽ / мес</p>
+          </a>
+          <button type="button" class="vacancies__card-button">Откликнуться</button>
+          <button type="button" class="vacancies__card-link">
+            <img class="vacancies__card-arrow" src="<%=require('./images/vacancies-arrow.svg')%>"
+              href="https://practicum.yandex.ru/job/vacancy-42">
+          </button>
+        </div>
+
+        <div class="vacancies__card">
+          <a class="vacancies__card-click" target="_blank">
+            <p class="vacancies__card-title">Наставник на курс <br>
+              «Python-разработчик»</p>
+            <img class="vacancies__card-info" src="<%=require('./images/vacancies-info.svg')%>">
+            <div class="vacancies__card-description">
+              <p class="vacancies__card-status">Набор в резерв</p>
+              <p class="vacancies__card-price">≈ 50 000 ₽ / мес</p>
+            </div>
+          </a>
+          <button type="button" class="vacancies__card-button">Откликнуться</button>
+          <button type="button" class="vacancies__card-link">
+            <img class="vacancies__card-arrow" src="<%=require('./images/vacancies-arrow.svg')%>">
+          </button>
+        </div>
+
+        <div class="vacancies__card">
+          <a class="vacancies__card-click" target="_blank">
+            <p class="vacancies__card-title">Наставник на курс <br>
+              «Миддл-Python-разработчик»</p>
+            <img class="vacancies__card-info" src="<%=require('./images/vacancies-info.svg')%>">
+            <div class="vacancies__card-description">
+              <p class="vacancies__card-status">Набор в резерв</p>
+              <p class="vacancies__card-price">≈ 50 000 ₽ / мес</p>
+            </div>
+          </a>
+          <button type="button" class="vacancies__card-button">Откликнуться</button>
+          <button type="button" class="vacancies__card-link">
+            <img class="vacancies__card-arrow" src="<%=require('./images/vacancies-arrow.svg')%>">
+          </button>
+        </div>
+
+        <div class="vacancies__card">
+          <a class="vacancies__card-click" target="_blank">
+            <p class="vacancies__card-title">Наставник на курс <br>
+              «Разработчик C++»</p>
+            <img class="vacancies__card-info" src="<%=require('./images/vacancies-info.svg')%>">
+            <p class="vacancies__card-price">≈ 45 000 ₽ / мес</p>
+          </a>
+          <button type="button" class="vacancies__card-button">Откликнуться</button>
+          <button type="button" class="vacancies__card-link">
+            <img class="vacancies__card-arrow" src="<%=require('./images/vacancies-arrow.svg')%>">
+          </button>
+        </div>
+
+        <div class="vacancies__card">
+          <a class="vacancies__card-click" target="_blank">
+            <p class="vacancies__card-title">Наставник на курс <br>
+              «Java-разработчик»</p>
+            <img class="vacancies__card-info" src="<%=require('./images/vacancies-info.svg')%>">
+            <p class="vacancies__card-price">≈ 55 000 ₽ / мес</p>
+          </a>
+          <button type="button" class="vacancies__card-button">Откликнуться</button>
+          <button type="button" class="vacancies__card-link">
+            <img class="vacancies__card-arrow" src="<%=require('./images/vacancies-arrow.svg')%>">
+          </button>
+        </div>
+
+        <div class="vacancies__card">
+          <a class="vacancies__card-click" target="_blank">
+            <p class="vacancies__card-title">Наставник на курс <br>
+              Go-разработчик»</p>
+            <img class="vacancies__card-info" src="<%=require('./images/vacancies-info.svg')%>">
+            <p class="vacancies__card-price">≈ 55 000 ₽ / мес</p>
+          </a>
+          <button type="button" class="vacancies__card-button">Откликнуться</button>
+          <button type="button" class="vacancies__card-link">
+            <img class="vacancies__card-arrow" src="<%=require('./images/vacancies-arrow.svg')%>">
+          </button>
+        </div>
+      </div>
+      <button type="button" class="vacancies__button">Смотреть все вакансии</button>
+
+    </section>
     <section name="reviews" class="reviews" id="reviews">
       <h2 class="reviews__title">Жизнь внутри нашей команды</h2>
       <p class="reviews__subtitle reviews__subtitle_num_1">
@@ -602,7 +705,7 @@
   <script src="js/main.js" type="module"></script>
   <div class="popup__bg">
     <form class="popup">
-      <img class="close-popup" src="<%=require('./images/close.svg')%>"/>
+      <img class="close-popup" src="<%=require('./images/close.svg')%>" />
       <label>
         <input type="text" name="name">
         <div class="label__text">
@@ -624,15 +727,15 @@
       <button type="submit">Отправить</button>
     </form>
   </div>
-  
-    </footer>
 
-    <div class="test_popup__bg" id="test_popup__bg"> 
-      <form class="test_popup" id="test_popup">
-        <img class="test_close-popup" src="<%=require('./images/close.svg')%>">
-        <h2 class="test_title">Узнай кто ты?</h2>    
-          <div class="quiz_wrapper" id="quiz_wrapper">
-          </div>
+  </footer>
+
+  <div class="test_popup__bg" id="test_popup__bg">
+    <form class="test_popup" id="test_popup">
+      <img class="test_close-popup" src="<%=require('./images/close.svg')%>">
+      <h2 class="test_title">Узнай кто ты?</h2>
+      <div class="quiz_wrapper" id="quiz_wrapper">
+      </div>
       <h2 class="title is-2 test_subtitle" id="test_subtitle"></h2>
       <div class="test_dots">
         <span class="test_dot test_dot1" id="test_dot1"></span>
@@ -642,10 +745,10 @@
         <span class="test_dot test_dot5" id="test_dot5"></span>
       </div>
 
-      </form>
-    
-    </div>  
-  
+    </form>
+
+  </div>
+
 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
