@@ -30,7 +30,7 @@
           <a class="navbar-start__item navbar-item">О нас</a>
           <a class="navbar-start__item navbar-item">Вакансии</a>
         </div>
-        <img src="./img/logo-yandex.svg" alt="логотип Яндекса" class="header__logo navbar-item">
+        <img src="./images/logo-yandex.svg" alt="логотип Яндекса" class="header__logo navbar-item">
         <div class="navbar-end">
           <a class="navbar-end__item navbar-item">О нас</a>
           <a class="navbar-end__item navbar-item">Вакансии</a>
@@ -71,7 +71,7 @@
             <li><button href=# class="professions_link"> Показать вакансии ревьюера &#8594</button></li>
           </ul>
             <figure class="image">
-              <img class="professions_image_left" src="./img/Pic_girl.svg">
+              <img class="professions_image_left" src="./images/Pic_girl.svg">
             </figure>
           </div>
         </div>
@@ -80,7 +80,7 @@
           <h2 class="title is-2 professions_title_right">Наставник</h2>
           <div class="columns professions_col_right">
               <figure class="image">
-                <img class="professions_image_right" src="./img/Pic_boy.svg">
+                <img class="professions_image_right" src="./images/Pic_boy.svg">
               </figure>
           <ul>
             <li><span class="professions_dot"></span>  Помогает студентам ставить цели, рефлексировать и делать выводы</li>
@@ -95,12 +95,17 @@
       </div>
       
     </section>
-    <section name="entry-test">
-
+    <section name="entry-test" class="entry-test">
+      <h2 class="entry-test_title title is-2">На чьей стороне ты?</h2>
+      <p class="entry-test_text">Не знаешь с чего начать и какая роль подойдёт лучше?</br>
+        Пройди быстрый тест, и мы подберём работу, подходящую</br> именно тебе.</p>
+        <div class="test_open-popup_wrapper">
+      <a href="#" class="test_open-popup">Открыть попап</a>
+      </div>
     </section>
     <section name="steps">
       <h2 class="title is-2 steps_title">Стать экспертом Яндекса просто, как</h2>
-      <img src="./img/Pic_airplane.svg" class="steps_image">
+      <img src="./images/Pic_airplane.svg" class="steps_image">
       <div class="tile is-ancestor steps">
         <div class="tile is-4 steps_column1">
           <div class="tile is-parent is-vertical">
@@ -283,9 +288,31 @@
         </li>
       </ul>
     </footer>
+
+    <div class="test_popup__bg" id="test_popup__bg"> 
+      <form class="test_popup" id="test_popup">
+        <img src="images/close.svg" class="test_close-popup">
+        <h2 class="test_title">Узнай кто ты?</h2>    
+          <div class="quiz_wrapper" id="quiz_wrapper">
+          </div>
+      <h2 class="title is-2 test_subtitle" id="test_subtitle"></h2>
+      <div class="test_dots">
+        <span class="test_dot test_dot1" id="test_dot1"></span>
+        <span class="test_dot test_dot2" id="test_dot2"></span>
+        <span class="test_dot test_dot3" id="test_dot3"></span>
+        <span class="test_dot test_dot4" id="test_dot4"></span>
+        <span class="test_dot test_dot5" id="test_dot5"></span>
+      </div>
+
+    </form>
+    
+  </div>  
+  
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js" type="module"></script>
+  <script src="js/entry_test.js" type="module"></script>
+  <script src="js/quiz.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- сносим ли мы гугл аналитикс?? -->
