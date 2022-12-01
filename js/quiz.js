@@ -136,7 +136,7 @@ const showResult = () => {
     Оценивает работы — зачёт/незачёт.</p>
   </div>
   <div class="column">
-    <img src="./images/Pic_girl.svg" class="quiz_pic">
+  <img class="quiz_pic" src="<%=require('./images/Pic_girl.svg')%>" alt="#">
   </div>
 </div>
   </div>
