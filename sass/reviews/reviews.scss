@@ -16,12 +16,15 @@
   font-size: 20px;
   line-height: 1.35;
   text-align: center;
-  margin-bottom: 40px;
+}
+
+.reviews__subtitle_num_1 {
+  margin-bottom: 7px;
 }
 
 .reviews__container {
   width: 100%;
-  margin: 0 auto;
+  margin: 40px auto 0;
   list-style: none;
   padding: 0;
   display: grid;
@@ -57,11 +60,94 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.35;
+  line-height: 1.47;
 }
 
 .reviews__accent {
   font-weight: 600;
   font-size: 20px;
-  line-height: 1.35;
+  line-height: 1.47;
+}
+
+.reviews__play-button {
+  appearance: none;
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../images/reviews_play-button.svg");
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  margin: 186px auto 12px;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.reviews__person-info {
+  box-sizing: border-box;
+  width: 204px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(3px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+.reviews__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  margin: 0 auto 4px;
+}
+
+.reviews__job {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.reviews__card_num_2 {
+  background-image: url("../../images/reviews-person-1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reviews__card_num_3 {
+  background-image: url("../../images/reviews-person-2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reviews__card_num_4 {
+  background-image: url("../../images/reviews-person-3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reviews__card_num_5 {
+  background-image: url("../../images/reviews-person-4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reviews__card_num_6 {
+  background-image: url("../../images/reviews-person-5.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reviews__card_num_7 {
+  background-image: url("../../images/reviews-person-6.jpg");
+  background-size: cover;
+  background-position: right;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
 }
