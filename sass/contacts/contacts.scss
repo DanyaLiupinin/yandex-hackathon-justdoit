@@ -3,25 +3,68 @@
     flex-direction: row;
     justify-content: center;
     position: relative;
+    margin: 160px auto;
 }
 
 .contacts_title{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 2.5rem;
+    position: relative;
+    top: 107px;
+    height: 46px;
+    font-family: 'YS';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 110%;
+    text-align: center;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
 .contacts_subtitle{
-    margin-top: 25px;
-    margin-bottom: 25px;
+    height: 27px;
+    font-family: 'YS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    text-align: center;    
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 90px;
 }
 
+.contacts_subtitle_low{
+     height: 27px;
+font-family: 'YS';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 135%;
+text-align: center;
+color: #000000;
+flex: none;
+order: 2;
+flex-grow: 0;
+margin-left: auto;
+    margin-right: auto;
+    margin-top: 211px;
+    position: relative;
+    bottom: 90px;
+}
 .contacts_col{
     position: relative;
-    margin-right: 20px;
-    border-radius: 20px;
+    margin-right: 40px;
+    border-radius: 12px;
     height: 329px;
-    width: 608px;
+    width: 609px;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -32,11 +75,18 @@
 } 
 
 .contacts_col_left{
-background-color: $yellow-tertiary;
+background-color: #FDEE93;
+width: 608px;
+height: 329px;
+padding: 0;
+
 }
 
 .contacts_col_right{
-background-color: $violet-tertiary;
+background-color: #9D85F4;
+width: 608px;
+height: 329px;
+padding: 0;
 }
 
 .contacts_button{
@@ -45,27 +95,27 @@ background-color: $violet-tertiary;
 
 
 .contacts_image_group{
-position: absolute;
-bottom: 10px;
+    position: absolute;
+    width: 191px;
+    height: 70px;
     left: 10px;
-    max-height: 70px;
-    max-width: 190px;
+    top: 259px;
 }
 
 .contacts_image_plane{
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    max-height: 220px;
-    max-width: 160px;
+    width: 162px;
+    height: 216px;
+    left: 438px;
+    top: 43px;
 }
 
 .contacts_image_rocket{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    max-height: 110px;
-    max-width: 160px;
+position: absolute;
+width: 135px;
+height: 129px;
+left: 6px;
+top: 188px;
 }
 
 .contacts_popup{
