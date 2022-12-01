@@ -27,7 +27,9 @@
           <a class="navbar-start__item" href="#reviews">О нас</a>
           <a class="navbar-start__item" href="#vacancies">Вакансии</a>
         </div>
+
         <img src="<%=require('./images/logo-yandex.svg')%>" alt="логотип Яндекса" class="header__logo navbar-item" />
+
         <div class="navbar-end">
           <a class="navbar-end__item" href="#faq">Частые вопросы</a>
           <a class="navbar-end__item" href="#footer">Контакты</a>
@@ -70,6 +72,7 @@
           </figure>
           <h2 class="title is-2 professions_title_left">Ревьюер</h2>
           <div class="columns professions_col_left">
+
             <ul type="circle">
               <li class="professions__item"><span class="professions__dot"></span>Проверяет код и проекты студентов</li>
               <li class="professions__item"><span class="professions__dot"></span>Простыми словами объясняет <br> им их
@@ -80,6 +83,7 @@
               <li class="professions__button"><button href=# class="professions_link"> Хочу стать ревьюером</button>
               </li>
             </ul>
+
           </div>
         </div>
 
@@ -147,6 +151,34 @@
       </div>
     </section>
 
+    <section name="entry-test" class="entry-test">
+      <h2 class="entry-test_title title is-2">На чьей стороне ты?</h2>
+      <p class="entry-test_text">Не знаешь с чего начать и какая роль подойдёт лучше?</br>
+        Пройди быстрый тест, и мы подберём работу, подходящую</br> именно тебе.</p>
+        <div class="test_open-popup_wrapper">
+      <a href="#" class="test_open-popup">Открыть попап</a>
+      </div>
+    </section>
+    <section name="steps">
+      <h2 class="title is-2 steps_title">Стать экспертом Яндекса просто, как</h2>
+      <img src="./images/Pic_airplane.svg" class="steps_image">
+      <div class="tile is-ancestor steps">
+        <div class="tile is-4 steps_column1">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification is-warning">
+              <div class="steps_block1">
+                <p class="steps_block1_title">раз</p>
+                <p class="steps_block1_subtitle">Выберите роль и заполните заявку</p>
+              </div>  
+            </article>
+              <article class="tile is-child">
+                <div class="steps_block2"></div>
+              </article>            
+              <article class="tile is-child">
+                <div class="steps_block2"></div>
+              </article>
+
+
     <section name="areas" class="areas">
       <h2 class="areas__title">Мы предлагаем работу</h2>
       <p class="areas__subtitle">Выбери свою экспертную область</p>
@@ -175,6 +207,7 @@
             <div class="areas__vacancy-information">
               <h3 class="areas__vacancy-title">Дизайн</h3>
               <p class="areas__vacancy-description">Графический, коммуникационный, для интерфейсов и продуктов</p>
+
             </div>
           </div>
           <div class="areas__card-back">
@@ -490,6 +523,7 @@
             href="https://praktikum.yandex.ru/reviews/">Отзывы</a>
         </li>
       </ul>
+
     </nav>
     <ul class="footer__info">
       <li>
@@ -546,6 +580,34 @@
       <button type="submit">Отправить</button>
     </form>
   </div>
+  
+    </footer>
+
+    <div class="test_popup__bg" id="test_popup__bg"> 
+      <form class="test_popup" id="test_popup">
+        <img src="images/close.svg" class="test_close-popup">
+        <h2 class="test_title">Узнай кто ты?</h2>    
+          <div class="quiz_wrapper" id="quiz_wrapper">
+          </div>
+      <h2 class="title is-2 test_subtitle" id="test_subtitle"></h2>
+      <div class="test_dots">
+        <span class="test_dot test_dot1" id="test_dot1"></span>
+        <span class="test_dot test_dot2" id="test_dot2"></span>
+        <span class="test_dot test_dot3" id="test_dot3"></span>
+        <span class="test_dot test_dot4" id="test_dot4"></span>
+        <span class="test_dot test_dot5" id="test_dot5"></span>
+      </div>
+
+    </form>
+    
+  </div>  
+  
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js" type="module"></script>
+  <script src="js/entry_test.js" type="module"></script>
+  <script src="js/quiz.js"></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- сносим ли мы гугл аналитикс?? -->
