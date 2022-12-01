@@ -9,32 +9,32 @@ let quiz_wrapper = document.getElementById("quiz_wrapper");
 const quizArray = [
   {
     id: "1",
-    question: "1.Вам больше нравится работать в команде или в одиночку?",
-    options: ["в команде", "в одиночку"],
+    question: "1.Вам больше нравится работать в команде или в одиночку?",
+    options: ["в команде", "в одиночку"],
     replies: [2, 3],
   },
   {
     id: "3",
     question:
-      "2. Если бы ты был учителем, то что тебе больше хотелось: читать лекции или проверять домашние задания?",
+      "2. Если бы ты был учителем, то что тебе больше хотелось: читать лекции или проверять домашние задания?",
     options: ["читать лекции", "проверять домашние задания"],
     replies: [4, 5],
   },
   {
     id: "5",
-    question: "3. Какой свой навык вы хотели бы прокачать?",
+    question: "3. Какой свой навык вы хотели бы прокачать?",
     options: ["soft skills", "hard skills"],
     replies: [5, 6],
   },
   {
     id: "7",
-    question: "4. Вы любите общаться в чатах?",
+    question: "4. Вы любите общаться в чатах?",
     options: ["да", "нет"],
     replies: [7, 8],
   },
   {
     id: "9",
-    question: "5. В какой из сфер у тебя есть опыт работы?",
+    question: "5. В какой из сфер у тебя есть опыт работы?",
     options: ["наставник", "реквьюер"],
     correct: [9, 10],
   },
@@ -53,12 +53,10 @@ let initialize = (numb) => {
   quiz_wrapper.innerHTML += `<button id="quiz_reply${
     numb + 1
   }" class="reply"></button>`;
-  quiz_wrapper.innerHTML += `<button id="quiz_focuser${numb}" class="reply_focuser"></button>`;
 
   let quizQuestion = document.getElementById(`quiz_Question${numb}`);
   let quizReply1 = document.getElementById(`quiz_reply${numb}`);
   let quizReply2 = document.getElementById(`quiz_reply${numb + 1}`);
-
   quiz_wrapper.scrollTop = quiz_wrapper.scrollHeight;
 
   let repliesArray = [];
@@ -76,7 +74,17 @@ let initialize = (numb) => {
     repliesArray.push(result[0].options[0]);
     if (numb < 9) initialize(numb + 2, numb + 3);
     else sendToServer(repliesArray);
-	})
+  });
+  quizReply2.addEventListener("click", (e) => {
+    e.preventDefault();
+    quizReply1.classList.add("hidden");
+    quizReply2.style.backgroundColor = "#FEF9D8";
+    quizReply2.style.border = "none";
+    repliesArray.push(result[0].options[1]);
+    if (numb < 9) initialize(numb + 2, numb + 3);
+    else sendToServer(repliesArray);
+  });
+};
 
 initialize(1);
 var timer = null;
@@ -121,24 +129,22 @@ const loading = (loading) => {
 
 const showResult = () => {
   test_popup.innerHTML = `
-  <h2 class="title quiz_final_title">Тебе бы подошла роль ревьюера!</h2>
-
+  <h2 class="title is-2 quiz_final_title">Тебе бы подошла роль ревьюера!</h2>
   <div class="columns quiz_block">
   <div class="column">
-    <p class="quiz_text">Проверяет код и проекты студентов;
-    Простыми словами объясняет им их ошибки;</br>
+    <p class="quiz_text">Проверяет код и проекты студентов;
+    Простыми словами объясняет им их ошибки;</br>
     </br>
     Даёт корректирующую обратную связь;
-    Оценивает работы — зачёт/незачёт.</p>
+    Оценивает работы — зачёт/незачёт.</p>
   </div>
   <div class="column">
   <img class="quiz_pic" src=${girl_image} alt="#">
   </div>
 </div>
   </div>
-
-  <button href="#" class="quiz_button_to_vac" id="quiz_button_to_vac">Хочу стать наставником</button>
-  <button href="#" class="quiz_button_to_descr" id="quiz_button_to_descr">Вернуться к описанию профессий</button>
+  <button href="#" class="quiz_button_to_vac" id="quiz_button_to_vac">Открыть список вакансий</button>
+  <button href="#" class="quiz_button_to_descr" id="quiz_button_to_descr">Вернуться к описанию профессий</button>
   `;
   let button_vac = document.getElementById("quiz_button_to_vac");
   let button_descr = document.getElementById("quiz_button_to_descr");
