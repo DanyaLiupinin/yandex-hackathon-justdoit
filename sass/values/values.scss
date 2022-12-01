@@ -1,0 +1,48 @@
+.values {
+  box-sizing: border-box;
+  background: $white;
+  /* Card shadow */
+  box-shadow: 0px 20px 40px rgba(217, 217, 224, 0.2);
+  border-radius: 100px;
+  width: 100%;
+  margin: 160px 0;
+  padding: 100px 204px 82px 202px;
+}
+
+.values__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1;
+  text-align: center;
+  padding-bottom: 43px;
+}
+
+.values__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.values__values {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.values__value {
+  width: 392px;
+}
+
+.values__header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  color: $violet-secondary;
+  padding-bottom: 16px;
+}
+
+.values__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.35;
+}
