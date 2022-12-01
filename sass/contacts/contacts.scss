@@ -1,240 +1,239 @@
-.contacts{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    margin: 160px auto;
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin: 160px auto 0;
 }
 
-.contacts_title{
-    position: relative;
-    top: 107px;
-    height: 46px;
-    font-family: 'YS';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 110%;
-    text-align: center;
-    color: #000000;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+.contacts_title {
+  position: relative;
+  top: 107px;
+  height: 46px;
+  font-family: "YS";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 110%;
+  text-align: center;
+  color: #000000;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.contacts_subtitle{
-    height: 27px;
-    font-family: 'YS';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 135%;
-    text-align: center;    
-    color: #000000;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    text-align:center;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 90px;
+.contacts_subtitle {
+  height: 27px;
+  font-family: "YS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  text-align: center;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 90px;
 }
 
-.contacts_subtitle_low{
-     height: 27px;
-font-family: 'YS';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 135%;
-text-align: center;
-color: #000000;
-flex: none;
-order: 2;
-flex-grow: 0;
-margin-left: auto;
-    margin-right: auto;
-    margin-top: 211px;
-    position: relative;
-    bottom: 90px;
+.contacts_subtitle_low {
+  height: 27px;
+  font-family: "YS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  text-align: center;
+  color: #000000;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 211px;
+  position: relative;
+  bottom: 90px;
 }
-.contacts_col{
-    position: relative;
-    margin-right: 40px;
-    border-radius: 12px;
-    height: 329px;
-    width: 609px;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.contacts_col:not(:last-child):after{
-    margin-right: 0;
-} 
-
-.contacts_col_left{
-background-color: #FDEE93;
-width: 608px;
-height: 329px;
-padding: 0;
-
+.contacts_col {
+  position: relative;
+  margin-right: 40px;
+  border-radius: 12px;
+  height: 329px;
+  width: 609px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.contacts_col_right{
-background-color: #9D85F4;
-width: 608px;
-height: 329px;
-padding: 0;
+.contacts_col:not(:last-child):after {
+  margin-right: 0;
 }
 
-.contacts_button{
-    border: none;
+.contacts_col_left {
+  background-color: #fdee93;
+  width: 608px;
+  height: 329px;
+  padding: 0;
 }
 
-
-.contacts_image_group{
-    position: absolute;
-    width: 191px;
-    height: 70px;
-    left: 10px;
-    top: 259px;
+.contacts_col_right {
+  background-color: #9d85f4;
+  width: 608px;
+  height: 329px;
+  padding: 0;
 }
 
-.contacts_image_plane{
-    position: absolute;
-    width: 162px;
-    height: 216px;
-    left: 438px;
-    top: 43px;
+.contacts_button {
+  border: none;
 }
 
-.contacts_image_rocket{
-position: absolute;
-width: 135px;
-height: 129px;
-left: 6px;
-top: 188px;
+.contacts_image_group {
+  position: absolute;
+  width: 191px;
+  height: 70px;
+  left: 10px;
+  top: 259px;
 }
 
-.contacts_popup{
-    width: 300px;
-    height: 300px;
-    border: 1px solid red;
+.contacts_image_plane {
+  position: absolute;
+  width: 162px;
+  height: 216px;
+  left: 438px;
+  top: 43px;
 }
 
+.contacts_image_rocket {
+  position: absolute;
+  width: 135px;
+  height: 129px;
+  left: 6px;
+  top: 188px;
+}
+
+.contacts_popup {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+}
 
 /* Важная часть */
 .popup__bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.5);
-    opacity: 0; // Скрываем фон и сам попап
-    pointer-events: none; // Запрещаем ему быть целью событий
-    transition: 0.5s all;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0; // Скрываем фон и сам попап
+  pointer-events: none; // Запрещаем ему быть целью событий
+  transition: 0.5s all;
 }
 
-.popup__bg.active { // При добавлении класса 'active'
-    opacity: 1; // Показываем фон и попап
-    pointer-events: all; // Возвращаем события
-    transition: 0.5s all;
+.popup__bg.active {
+  // При добавлении класса 'active'
+  opacity: 1; // Показываем фон и попап
+  pointer-events: all; // Возвращаем события
+  transition: 0.5s all;
 }
 
 .popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
-    background: #fff;
-    width: 400px;
-    padding: 25px;
-    transition: 0.5s all;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+  background: #fff;
+  width: 400px;
+  padding: 25px;
+  transition: 0.5s all;
 }
 
-.popup.active { // При добавлении класса 'active'
-    transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
-    transition: 0.5s all;
+.popup.active {
+  // При добавлении класса 'active'
+  transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+  transition: 0.5s all;
 }
 /* Конец важной части */
 /* Далее код для стилизации формы */
 .close-popup {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
 .popup label {
-    width: 100%;
-    margin-bottom: 25px;
-    display: flex;
-    flex-direction: column-reverse;
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .popup .label__text {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #cfd0d3;
-    margin-bottom: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cfd0d3;
+  margin-bottom: 5px;
 }
 
 .popup input {
-    height: 45px;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #cfd0d3;
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cfd0d3;
 }
 
 .popup input:focus {
-    border-bottom: 1px solid #2982ff;
+  border-bottom: 1px solid #2982ff;
 }
 
 .popup input:focus + .label__text {
-    color: #2982ff;
+  color: #2982ff;
 }
 
 .popup textarea {
-    resize: none;
-    width: 100%;
-    height: 150px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #cfd0d3;
-    font-size: 18px;
-    padding-top: 5px;
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cfd0d3;
+  font-size: 18px;
+  padding-top: 5px;
 }
 
 .popup textarea:focus {
-    border-bottom: 1px solid #2982ff;
+  border-bottom: 1px solid #2982ff;
 }
 
 .popup textarea:focus + .label__text {
-    color: #2982ff;
+  color: #2982ff;
 }
 
 .popup button {
-    width: 100%;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 18px;
-    border: 2px solid #2982ff;
-    background: #2982ff;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: 0.5s all;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  border: 2px solid #2982ff;
+  background: #2982ff;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s all;
 }
 
 .popup button:hover {
-    background: #fff;
-    color:#2982ff;
-    transition: 0.5s all;
+  background: #fff;
+  color: #2982ff;
+  transition: 0.5s all;
 }
