@@ -1,6 +1,8 @@
 .reviews {
   max-width: 1256px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 160px;
 }
 
 .reviews__title {
@@ -8,7 +10,7 @@
   font-size: 42px;
   line-height: 1.1;
   text-align: center;
-  margin: 160px 0 24px;
+  margin-bottom: 24px;
 }
 
 .reviews__subtitle {

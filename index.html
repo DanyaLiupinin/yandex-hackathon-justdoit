@@ -24,13 +24,13 @@
     <div class="header__wrapper">
       <nav class="header__navigation navbar">
         <div class="navbar-start">
-          <a class="navbar-start__item">О нас</a>
-          <a class="navbar-start__item">Вакансии</a>
+          <a class="navbar-start__item" href="#reviews">О нас</a>
+          <a class="navbar-start__item" href="#vacancies">Вакансии</a>
         </div>
         <img src="<%=require('./images/logo-yandex.svg')%>" alt="логотип Яндекса" class="header__logo navbar-item" />
         <div class="navbar-end">
-          <a class="navbar-end__item">О нас</a>
-          <a class="navbar-end__item">Вакансии</a>
+          <a class="navbar-end__item" href="#faq">Частые вопросы</a>
+          <a class="navbar-end__item" href="#footer">Контакты</a>
         </div>
       </nav>
     </div>
@@ -374,8 +374,8 @@
 
     </section>
 
-    <section name="vacancies"></section>
-         <section name="reviews" class="reviews">
+    <section name="vacancies" id="vacancies"></section>
+         <section name="reviews" class="reviews" id="reviews">
         <h2 class="reviews__title">Жизнь внутри нашей команды</h2>
         <p class="reviews__subtitle reviews__subtitle_num_1">
           Часть команды — часть корабля.
@@ -500,9 +500,9 @@
         </div>
       </a>
     </section>
-    <section name="faq"></section>
+    <section name="faq" id="faq"></section>
   </main>
-  <footer name="footer" class="footer">
+  <footer name="footer" class="footer" id="footer">
     <ul class="footer__contacts">
       <li class="footer__logo">
         <img class="'footer__logo-img" src="<%=require('./images/praktikum-logo.svg')%>"
