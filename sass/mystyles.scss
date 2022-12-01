@@ -39,30 +39,6 @@ $purple: $black;
 $pink: $black;
 $beige-lighter: white;
 
-$brown: $black;
-$beige-light: $black;
-$purple: $black;
-$pink: $black;
-$beige-lighter: white;
-
-$brown: $black;
-$beige-light: $black;
-$purple: $black;
-$pink: $black;
-$beige-lighter: white;
-
-$brown: $black;
-$beige-light: $black;
-$purple: $black;
-$pink: $black;
-$beige-lighter: white;
-
-$brown:$black;
-$beige-light:$black;
-$purple:$black;
-$pink:$black;
-$beige-lighter: white;
-
 // Update Bulma's global variables
 $family-sans-serif: "YS", sans-serif;
 $grey-dark: $brown;
@@ -127,6 +103,5 @@ $input-shadow: none;
 @import "./contacts/contacts.scss";
 // footer
 @import "./footer/footer.scss";
-/* // reviews
+// reviews
 @import "./reviews/reviews.scss";
-@import "./reviews/vanilla-js-carousel.scss"; */
