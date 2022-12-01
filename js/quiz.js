@@ -46,7 +46,7 @@ let initialize = (numb) => {
 	test_subtitle.innerHTML = `Вопрос ${Math.ceil(numb/2)} из 5`;
 	if (numb!=1){
 		let dot = document.getElementById(`test_dot${Math.ceil(numb/2)}`);
-		dot.style.backgroundColor = "#9D85F4";	
+		dot.style.backgroundColor = "#9D85F4";
 	}
 
 	quiz_wrapper.innerHTML += `<button id="quiz_Question${numb}" class="question"></button>`
@@ -57,7 +57,7 @@ let initialize = (numb) => {
 	let quizQuestion = document.getElementById(`quiz_Question${numb}`);
 	let quizReply1 = document.getElementById(`quiz_reply${numb}`);
 	let quizReply2 = document.getElementById(`quiz_reply${numb+1}`);
-  
+
   quiz_wrapper.scrollTop=quiz_wrapper.scrollHeight;
 
   let repliesArray = [];
@@ -79,7 +79,7 @@ let initialize = (numb) => {
 	quizReply2.addEventListener("click", (e) => {
 		e.preventDefault();
 		quizReply1.classList.add("hidden");
-		quizReply2.style.backgroundColor = "#FEF9D8";	
+		quizReply2.style.backgroundColor = "#FEF9D8";
     quizReply2.style.border = "none";
     repliesArray.push(result[0].options[1]);
 		if (numb<9) initialize (numb+2,numb+3)
@@ -97,13 +97,13 @@ const sendToServer = async (results) => {
     const resultData = results;
     if (!resultData) {
       throw new Error("Invalid data");
-    }    
+    }
   } catch (error) {console.log(`Ошибка: ${error}`)}
        finally {
       setTimeout(() => {
         loading(false);
         showResult (); //showResult (resultData);
-      }, 5000) 
+      }, 5000)
   }
 }
 
@@ -127,9 +127,9 @@ else {
   loader(false)};
 }
 
-const showResult = () => { 
+const showResult = () => {
   test_popup.innerHTML = `
-  <h2 class="title is-2 quiz_final_title">Тебе бы подошла роль ревьюера!</h2>
+  <h2 class="title quiz_final_title">Тебе бы подошла роль ревьюера!</h2>
 
   <div class="columns quiz_block">
   <div class="column">
@@ -145,7 +145,7 @@ const showResult = () => {
 </div>
   </div>
 
-  <button href="#" class="quiz_button_to_vac" id="quiz_button_to_vac">Открыть список вакансий</button>
+  <button href="#" class="quiz_button_to_vac" id="quiz_button_to_vac">Хочу стать наставником</button>
   <button href="#" class="quiz_button_to_descr" id="quiz_button_to_descr">Вернуться к описанию профессий</button>
   `;
   let button_vac = document.getElementById('quiz_button_to_vac');
