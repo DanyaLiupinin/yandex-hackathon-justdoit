@@ -92,7 +92,6 @@
 }
 
 .responsibilities__button {
-  font-family: "YS";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -110,5 +109,10 @@
 }
 
 .responsibilities__button:hover {
-  opacity: 0.8;
+  background-color: $violet-accent;
+}
+
+
+.responsibilities__button:active {
+  background-color: #5130C1;
 }

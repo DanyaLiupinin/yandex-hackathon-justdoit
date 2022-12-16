@@ -60,13 +60,8 @@
   position: relative;
 }
 
-.vacancies__card-click {
-  padding-bottom: 20px;
-  height: 100%;
-}
-
-.vacancies__card-click:hover {
-  opacity: 0.7;
+.vacancies__card:hover {
+  box-shadow: 0px 4px 50px rgba(154, 126, 255, 0.25);
 }
 
 .vacancies__card-link {
@@ -83,7 +78,8 @@
 }
 
 .vacancies__card-link:hover {
-  opacity: 0.5;
+  opacity: 0.7;
+  //color: $violet-accent;
 }
 
 .vacancies__card:nth-child(n + 4) {
@@ -152,22 +148,39 @@
   bottom: 24px;
   left: 0;
   cursor: pointer;
+  transition: .2s;
+  background-color: $gray-tertiary;
 }
 
 .vacancies__card-button:hover {
-  opacity: 0.7;
+  background-color: #E8E8E8;
+}
+
+.vacancies__card-button:active {
+  background-color: #DBDBDB;
 }
 
 .vacancies__button {
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
   background-color: $black;
   min-width: 294px;
   min-height: 56px;
   color: $white;
   margin: 40px auto 0;
   border-radius: 55px;
+  cursor: pointer;
+  border: none;
+  transition: .2s;
 }
 
 .vacancies__button:hover {
-  opacity: 0.8;
-  cursor: pointer;
+  background-color: $violet-accent;
 }
+
+.vacancies__button:active {
+  background-color: #5130C1;
+}
+

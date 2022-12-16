@@ -5,13 +5,22 @@
   border: 0;
   padding: 0;
   min-width: 270px;
-  transition: .2s;
-
+  transition: .3s;
+  background-color: $black;
+  color: $white;
   font-weight: 700;
-font-size: 16px;
-line-height: 135%;
+  font-size: 16px;
+  line-height: 135%;
+  cursor: pointer;
 }
 
 .intro__button:hover {
-  opacity: .8;
+  background-color: $violet-accent;
+  color: $white;
 }
+
+.intro__button:active {
+  background-color: #5130C1;
+  color: $white;
+}
+

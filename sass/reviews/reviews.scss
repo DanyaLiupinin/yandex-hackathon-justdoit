@@ -76,15 +76,21 @@
   box-sizing: border-box;
   display: block;
   border: none;
-  background-color: transparent;
+  background-color: #FFFFFF;
   background-image: url("../../images/reviews_play-button.svg");
-  background-size: contain;
+  background-size: cover;
   width: 60px;
   height: 60px;
   margin: 186px auto 12px;
+  border-radius: 30px;
+  padding: 0;
+  cursor: pointer;
+  transition: .2s;
   &:hover {
-    opacity: 0.8;
-    cursor: pointer;
+    background-image: url("../../images/reviews-play-button-hover.svg");
+  }
+  &:active {
+    background-image: url("../../images/reviews-play-button-hover-active.svg");
   }
 }
 

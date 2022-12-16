@@ -41,11 +41,18 @@
   min-width: 174px;
   min-height: 42px;
   transition: .2s;
+  border: none;
 }
 
 .test_open-popup:hover {
-  opacity: 0.8;
+  background-color: $violet-accent;
 }
+
+.test_open-popup:active {
+  background-color: #5130C1;
+}
+
+
 
 /* Важная часть */
 .test_popup__bg {
