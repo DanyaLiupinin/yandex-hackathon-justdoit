@@ -1,0 +1,251 @@
+.test_subtitle {
+  position: absolute;
+  margin-left: 40px;
+  bottom: 73px;
+  font-family: "YS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+}
+
+.test_title {
+  margin: 40px auto 38px;
+  height: 46px;
+  left: 423px;
+  top: 56px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 110%;
+  text-align: center;
+  color: #000000;
+}
+
+.question {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 18px 40px;
+  gap: 10px;
+  width: 659px;
+  left: 40px;
+  top: 158px;
+  background: #dcd3fb;
+  border-radius: 55px;
+  border: none;
+  margin-left: 40px;
+}
+
+.reply {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 10px;
+  margin: 8px 100px 8px auto;
+  height: 57px;
+  background: #ffffff;
+  border: 2px solid #858585;
+  border-radius: 55px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+}
+
+.reply:hover {
+  background: $yellow-tertiary;
+  transition: 0.5s all;
+}
+
+.test_dots {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 12px;
+  margin-left: 40px;
+  bottom: 49px;
+}
+
+.test_dot {
+  height: 12px;
+  width: 12px;
+  margin-right: 12px;
+  background-color: $violet-tertiary;
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.test_dot1 {
+  background-color: $violet-secondary;
+}
+
+.load_dots {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  position: absolute;
+  // width: 276px;
+  height: 36px;
+  left: 361px;
+  top: 294px;
+}
+
+.load_dot {
+  height: 36px;
+  width: 36px;
+  margin-right: 24px;
+  background-color: $violet-tertiary;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.load_title {
+  position: absolute;
+  height: 46px;
+  left: 331px;
+  top: 467px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 110%;
+  text-align: center;
+  color: #000000;
+}
+
+.quiz_button_to_vac {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16.5px 40px;
+  gap: 10px;
+  position: absolute;
+  width: 277px;
+  height: 55px;
+  left: 421px;
+  top: 571px;
+  color: white;
+  background: #000000;
+  border-radius: 55px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.quiz_button_to_vac:hover {
+  opacity: .8;
+}
+
+.quiz_button_to_descr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px 40px;
+  gap: 10px;
+  position: absolute;
+  width: 340px;
+  height: 40px;
+  left: 390px;
+  top: 650px;
+  background: #f5f5f5;
+  border-radius: 55px;
+   cursor: pointer;
+  transition: .2s;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.quiz_button_to_descr:hover {
+  opacity: .8;
+}
+
+.quiz_final_title {
+  position: absolute;
+  height: 46px;
+  left: 221px;
+  top: 60px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 110%;
+  text-align: center;
+  color: #000000;
+}
+
+.quiz_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 77px;
+  position: absolute;
+  width: 666.88px;
+  height: 386px;
+  left: 202px;
+  top: 131px;
+}
+
+.quiz_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 29px;
+  width: 363px;
+  height: 207px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+}
+
+.quiz_pic {
+  border: none;
+  width: 227px;
+  height: 355px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  max-width: fit-content;
+}
+
+.quiz_wrapper {
+  height: 510px;
+  width: 1150px;
+  overflow: auto;
+  position: relative;
+  margin: 0;
+}
+
+.quiz_wrapper::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+.quiz_wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+.quiz_wrapper::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: $gray-secondary;
+}
+
+.reply_focuser {
+  border: none;
+  background-color: transparent;
+  width: 1px;
+  height: 1px;
+}
