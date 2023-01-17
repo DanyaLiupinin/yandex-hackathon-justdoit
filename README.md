@@ -10,6 +10,8 @@ A desktop version of the landing page to attract reviewers and mentors to Yandex
 - Bulma
 - JS
 - Flex
+- Animations
+-Transitions
 - Webpack
 
 ## Working with the project:
