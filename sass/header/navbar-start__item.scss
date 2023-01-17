@@ -1,0 +1,14 @@
+.navbar-start__item {
+  padding: 0;
+  height: fit-content;
+  margin: auto 0;
+  transition: .2s;
+}
+
+.navbar-start__item:not(:first-child) {
+  margin-left: 120px;
+}
+
+.navbar-start__item:hover {
+  opacity: .7;
+}
